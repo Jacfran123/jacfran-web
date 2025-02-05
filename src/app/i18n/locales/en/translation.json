@@ -1,0 +1,22 @@
+{
+  "home": "Home",
+  "aboutUs": "About Us",
+  "services": "Services",
+  "gallery": "Gallery",
+  "coverage": "Coverage",
+  "getAquote": "get a quote",
+  "Home": {
+    "Ceramic": {
+      "title": "Ceramic Coating",
+      "subtitle": "Keep Your car´s paint pristine and radiant"
+    },
+    "Detailing": {
+      "title": "CAR DETAILING",
+      "subtitle": "Keep Your Car Like New! Refresh your Car´s interior & Shine the Exterior"
+    },
+    "Interior": {
+      "title": "DETAILED INTERIOR",
+      "subtitle": "Renew the interior of your vehicle like a dealers"
+    }
+  }
+}

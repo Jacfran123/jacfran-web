@@ -1,0 +1,22 @@
+{
+  "home": "Home",
+  "aboutUs": "About Us",
+  "services": "Servicios",
+  "gallery": "Galeria",
+  "coverage": "Coverage",
+  "getAquote": "get a quote",
+  "Home": {
+    "Ceramic": {
+      "title": "Revestimiento cerámico",
+      "subtitle": "Mantén la pintura de tu auto impecable y radiante"
+    },
+    "Detailing": {
+      "title": "DETALLE DEL COCHE",
+      "subtitle": "¡Mantén tu auto como nuevo! Refresca el interior de tu auto y haz brillar el exterior"
+    },
+    "Interior": {
+      "title": "INTERIOR DETALLADO",
+      "subtitle": "Renueva el interior de tu vehículo como un concesionario"
+    }
+  }
+}
