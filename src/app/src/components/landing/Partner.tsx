@@ -20,7 +20,7 @@ export default function Partners(props: PartnersProps) {
           delay: 3000,
           disableOnInteraction: false,
         }}
-        loop={true}
+        loop
         breakpoints={{
           320: {
             slidesPerView: 1,

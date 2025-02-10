@@ -66,8 +66,6 @@ export default function Hero(props: HeroProps) {
     };
   }, []);
 
-  const handleCarSelect = (swiper: any) => {};
-
   return (
     <section
       aria-labelledby="hero-title"
@@ -91,55 +89,6 @@ export default function Hero(props: HeroProps) {
               subtitleRefs={subtitleRefs}
               lng={lng}
             />
-            {/* <Swiper
-              ref={swiperRef}
-              modules={[Pagination, Navigation, Autoplay]}
-              spaceBetween={20}
-              slidesPerView={1}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
-              onSlideChange={(swiper) => handleCarSelect(swiper)}
-              onSwiper={(swiper) => {
-                handleCarSelect(swiper);
-              }}
-              pagination={{
-                clickable: true,
-                el: ".hero-swiper-pagination",
-              }}
-              loop={true}
-              className="hero-swiper"
-              style={
-                {
-                  "--swiper-pagination-color": "#1c9950",
-                  "--swiper-pagination-bullet-inactive-color": "#9C9C9C",
-                  "--swiper-pagination-bullet-inactive-opacity": "1",
-                  "--swiper-pagination-bullet-size": "13px",
-                  "--swiper-pagination-bullet-horizontal-gap": "6px",
-                } as React.CSSProperties
-              }
-              navigation={{
-                nextEl: ".hero-swiper-button-next",
-              }}
-            >
-              {HOME_TITLE.map(({ title, subtitle }, index) => (
-                <SwiperSlide key={`${title} - ${subtitle}`}>
-                  <h1
-                    ref={(el) => (titleRefs.current[index] = el)}
-                    className="text-[clamp(45px,7vw,150px)] leading-[clamp(56px,7vw,180px)] font-neueRegular uppercase text-textColor-secondary opacity-0"
-                  >
-                    {t(title)}
-                  </h1>
-                  <h2
-                    ref={(el) => (subtitleRefs.current[index] = el)}
-                    className="font-neueRegular text-textColor-secondary text-[clamp(12px,3vw,36px)] opacity-0"
-                  >
-                    {t(subtitle)}
-                  </h2>
-                </SwiperSlide>
-              ))}
-            </Swiper> */}
             <div className="hero-swiper-button-prev"></div>
             <div className="hero-swiper-button-next"></div>
             <div className="hero-swiper-pagination"></div>

@@ -12,6 +12,7 @@ import Footer from "./Footer";
 import Services from "./Services";
 import Packages from "./Packages";
 import Hero from "./Hero";
+import Gallery from "./Gallery";
 
 const SECTIONS = [
   {
@@ -20,11 +21,12 @@ const SECTIONS = [
   },
   { id: "aboutus", component: AboutUs },
   { id: "cackages", component: Packages },
+  { id: "gallery", component: Gallery },
   { id: "faq", component: FrequentlyAsked },
   { id: "partners", component: Partners },
   { id: "services", component: Services },
   { id: "coverage", component: Reviews },
-  { id: "gallery", component: Contact },
+  { id: "contact", component: Contact },
   { id: "", component: Footer },
 ];
 
