@@ -8,7 +8,7 @@ export default function VideoPlayer() {
       loop
       muted
       playsInline
-      preload="metadata"
+      preload="auto"
       aria-label="A promotional video showcasing car detailing services"
       //poster="/images/packages_background.png"
     >

@@ -4,16 +4,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import Image from "next/image";
 import { useState } from "react";
-import { REVIEWS_IMAGE, TESTIMONIALS } from "../../constants/mocks";
+import { TESTIMONIALS } from "../../constants/mocks";
 import { Params } from "@/app/types/types";
 import ArrowLeft from "@/app/src/assets/carousel/Reviews/arrow_left.svg";
 import ArrowRight from "@/app/src/assets/carousel/Reviews/arrow_right.svg";
 import "swiper/css";
 import "swiper/css/navigation";
+import { useTranslation } from "react-i18next";
 
 export interface ReviewsProps extends Params {}
 
 export default function Reviews(props: ReviewsProps) {
+  const { lng } = props;
+  const { t } = useTranslation(lng);
+
   const [visibleIds, setVisibleIds] = useState<number>(0);
 
   const handleSlideChange = (swiper: any) => {
@@ -80,14 +84,11 @@ export default function Reviews(props: ReviewsProps) {
                       className="font-robotoBold text-[32px] text-textColor-secondary font-normal md:text-x2l"
                       //cite={testimonial.source || "#"}
                     >
-                      "{testimonial.quote}"
+                      "{t(testimonial.quote)}"
                     </blockquote>
-                    <div className="text-white uppercase">
+                    <div className="text-white uppercase pt-5">
                       <div className="font-neueRegular text-xl text-textColor-secondary font-normal">
-                        {testimonial.author}
-                      </div>
-                      <div className="font-robotoBold text-xl text-textColor-secondary font-normal">
-                        {testimonial.role}
+                        {t(testimonial.author)}
                       </div>
                     </div>
                   </div>
@@ -108,7 +109,7 @@ export default function Reviews(props: ReviewsProps) {
                 />
               </button>
             </div>
-            <div className="flex justify-center items-center pt-10 md:pl-10">
+            {/* <div className="flex justify-center items-center pt-10 md:pl-10">
               {REVIEWS_IMAGE.map((element) => {
                 return (
                   <div
@@ -127,7 +128,7 @@ export default function Reviews(props: ReviewsProps) {
                   </div>
                 );
               })}
-            </div>
+            </div> */}
           </div>
           <style jsx>{`
             .swiper-button-prev::after,

@@ -1,22 +1,20 @@
 "use client";
 
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { useState } from "react";
+
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
+import { GALLERY } from "../../constants/mocks";
+
 export default function Gallery() {
-  const slides = [
-    { id: 1, color: "#1E1E1E", title: "Interior luxury" },
-    { id: 2, color: "#D71920", title: "Headlight polish" },
-    { id: 3, color: "#009F5D", title: "Leather care" },
-    { id: 4, color: "#0057B8", title: "Paint protection" },
-    { id: 5, color: "#F2A900", title: "Wheel cleaning" },
-  ];
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="bg-[#101115] py-[80px]">
-      <div className="w-full bg-bg-secondary flex items-center justify-center">
+    <section className="w-full mx-auto overflow-hidden gallery-container bg-[#101115] pb-[120px] md:pb-16">
+      <div className="flex items-center justify-center pt-[80px]">
         <div className="w-[556px] text-center">
           <h2 className="font-neueRegular text-[clamp(34px,3vw,60px)] text-textColor-secondary">
             The best service in bay area
@@ -27,34 +25,64 @@ export default function Gallery() {
           </p>
         </div>
       </div>
-
-      <div className="pt-10">
-        <Swiper
-          modules={[Navigation]}
-          slidesPerView={3}
-          spaceBetween={30}
-          centeredSlides={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          grabCursor
-          loop
-          navigation
-          className="w-full max-w-[1366px]"
-        >
-          {slides.map((slide) => (
-            <SwiperSlide key={slide.id} className="swiper-slide">
-              <div
-                className="flex items-center justify-center text-white text-lg font-bold h-[509px]"
-                style={{ backgroundColor: slide.color }}
-              >
-                <span>{slide.title}</span>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+      <Swiper
+        className="mySwiper"
+        modules={[Pagination, Navigation, Autoplay]}
+        slidesPerView={2.5}
+        navigation={{
+          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+        }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        loop
+        centeredSlides
+        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1366: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        }}
+      >
+        {GALLERY.map((item, index) => (
+          <SwiperSlide key={`${index} - gallery`}>
+            <div
+              className={`flex items-center justify-center text-4xl font-bold transition-transform duration-500 ease-in-out overflow-hidden ${
+                activeIndex === index
+                  ? "h-[460px] transform translate-y-[30px]"
+                  : "h-[509px] transform translate-y-0"
+              }`}
+            >
+              <Image
+                className="object-cover"
+                src={item}
+                alt={`gallery - logo - ${index}`}
+                loading="lazy"
+                style={{ width: "100vw", height: "100%" }}
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 }

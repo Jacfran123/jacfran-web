@@ -5,6 +5,7 @@
   "gallery": "Gallery",
   "coverage": "Coverage",
   "getAquote": "get a quote",
+  "bookNow": "Book Now",
   "Home": {
     "Ceramic": {
       "title": "Ceramic Coating",
@@ -17,6 +18,186 @@
     "Interior": {
       "title": "DETAILED INTERIOR",
       "subtitle": "Renew the interior of your vehicle like a dealers"
+    }
+  },
+  "FrequentlyAsked": {
+    "CarDetailing": {
+      "title": "What is Car Detailing? ",
+      "description": "Car detailing is a thorough cleaning, restoration, and protection of a vehicle’s interior and exterior. It goes beyond a regular car wash by addressing every detail of your car to enhance its appearance and protect its surfaces. Full Car Detail in bay area."
+    },
+    "CarCleaning": {
+      "title": "What’s the Difference Between Car Cleaning and Car Detailing?",
+      "description": "A car wash or car cleaning typically focuses on removing surface-level dirt from the exterior and sometimes the interior. Car detailing is a more comprehensive service, including deep cleaning, paint correction, waxing, polishing, and interior conditioning to maintain and protect your vehicle. Mobile Interior Car Cleaning."
+    },
+    "IGetMyCarDetailed": {
+      "title": "How Often Should I Get My Car Detailed?",
+      "description": "The frequency depends on how often you drive, environmental conditions, and personal. preferences. On average, we recommend detailing your car every 3-6 months to maintain its appearance and value."
+    },
+    "BenefitsOfCarDetailing": {
+      "title": "What Are The Benefits Of Car Detailing?",
+      "description": "Car detailing helps:",
+      "points": {
+        "one": "Protect the paint and interior from damage.",
+        "two": "Maintain or increase your car’s resale value.",
+        "three": "Improve your driving experience with a fresh and clean vehicle.",
+        "four": "Enhance your car’s overall appearance."
+      }
+    },
+    "FullCarDetail": {
+      "title": "What is included in a full car detail?",
+      "description": "A full car detail (Exterior Detail and Interior Detail) typically includes:",
+      "points": {
+        "one": "Exterior Services: Washing, waxing, polishing, clay bar treatment, and paint protection.",
+        "two": "Interior Services: Deep cleaning of carpets, seats, and upholstery, dashboard and panel treatment, and odor removal."
+      }
+    },
+    "DetailingCost": {
+      "title": "How much does car detailing cost?",
+      "description": "The cost depends on the level of service, your car’s size, and any additional treatments like ceramic coating or paint correction. View our Packages or Contact us for a personalized quote."
+    },
+    "WillDetailingProtect": {
+      "title": "Will detailing protect my car's paint?",
+      "description": "Yes! Waxing, sealants, or ceramic coatings applied during detailing act as protective layers, safeguarding your paint from UV rays, dirt, and contaminants."
+    },
+    "MobileCarDetailing": {
+      "title": "How is mobile car detailing different from regular detailing services?",
+      "description": "Mobile car detailing services bring professional auto detailing directly to your location. This convenience is ideal for those searching for “car detailing near me” or “mobile detailing near me.” Our services cover mobile interior car detailing, mobile exterior car detailing, and more in areas like Bay Area."
+    },
+    "OfferSameDayCar": {
+      "title": "Do you offer same-day car detailing services?",
+      "description": "Yes, same-day services are available based on our schedule. Contact us early for availability in Bay Area."
+    },
+    "CanAutoDetailingRemove": {
+      "title": "Can auto detailing remove scratches or stains?",
+      "description": "Yes, professional auto detailing can address minor scratches and stains. Services like paint correction and interior shampooing are designed to restore your vehicle’s surfaces."
+    }
+  },
+  "Reviews": {
+    "onePerson": {
+      "name": "Emily R. from San Francisco",
+      "description": "The detailing service was exceptional. My car looks brand new inside and out. The team was professional and efficient, and I will definitely be coming back for future services."
+    },
+    "twoPerson": {
+      "name": "Mike S. from Oakland",
+      "description": "I couldn't be happier with the detailing I received. The team did an amazing job removing every stain and leaving my car sparkling clean. Highly recommended!"
+    },
+    "threePerson": {
+      "name": "Laura P. from San Jose",
+      "description": "I was impressed with the attention to detail and dedication of the team. From headlight restoration to interior cleaning, everything was impeccable. Definitely worth it!"
+    }
+  },
+  "Packages": {
+    "title": "full detail",
+    "subtitle": "Packages",
+    "selectModel": "Select your model car",
+    "details": "Details",
+    "interior": "Interior",
+    "exterior": "Exterior",
+    "Basic": {
+      "includes": {
+        "Interior": [
+          "Full Wipe Down Disinfection",
+          "Vacuum Interior",
+          "Stains Spot Treatment",
+          "Detail Steering Wheel",
+          "Clean all Windows inside",
+          "Clean Plastics",
+          "Clean Crevices & Seams",
+          "Clean Middle Console",
+          "Clean Instrument Panels",
+          "Shampoo Carpet & Upholstery",
+          "Clean and Shampoo Seats",
+          "Detail Floor Mats",
+          "Air Freshener Treatment"
+        ],
+        "Exterior": [
+          "Professional Foam Cannon",
+          "Hand Wash",
+          "Clay Bar/paint decontamination",
+          "Light Bug and Tar Removal",
+          "Wheel Faces Cleaned",
+          "Inside of the Wheel Cleaned",
+          "Dress and Shine Tires",
+          "Clean Wheel Wells",
+          "Dress All Exterior Plastic",
+          "Carnauba Wax On Paint",
+          "Windows Clean In & Out",
+          "Spot Free Water (do not spot glass or paint)"
+        ]
+      }
+    },
+    "Gold": {
+      "includes": {
+        "Interior": [
+          "Heavy Stain Removal | Interior Shampoo | Steam Cleaning",
+          "Full Wipe Down Disinfection",
+          "Vacuum Interior",
+          "Stains Spot Treatment",
+          "Detail Steering Wheel",
+          "Clean all Windows inside",
+          "Clean Plastics",
+          "Clean Crevices & Seams",
+          "Clean Middle Console",
+          "Clean Instrument Panels",
+          "Shampoo Carpet & Upholstery",
+          "Clean and Shampoo Seats",
+          "Detail Floor Mats",
+          "Air Freshener Treatment"
+        ],
+        "Exterior": [
+          "Professional Foam Cannon",
+          "Hand Wash",
+          "Clay Bar/paint decontamination",
+          "Light Bug and Tar Removal",
+          "Wheel Faces Cleaned",
+          "Inside of the Wheel Cleaned",
+          "Dress and Shine Tires",
+          "Clean Wheel Wells",
+          "Dress All Exterior Plastic",
+          "Ceramic Wax On Paint",
+          "Windows Clean In & Out",
+          "Spot Free Water (do not spot glass or paint)"
+        ]
+      }
+    },
+    "Diamond": {
+      "prices": {
+        "SEDAN": { "before": 1499, "now": 1274 },
+        "SUV": { "before": 1749, "now": 1486 },
+        "VAN": { "before": 1949, "now": 1656 }
+      },
+      "includes": {
+        "Interior": [
+          "Heavy Stain Removal | Interior Shampoo | Steam Cleaning",
+          "Full Wipe Down Disinfection",
+          "Vacuum Interior",
+          "Stains Spot Treatment",
+          "Detail Steering Wheel",
+          "Clean all Windows inside",
+          "Clean Plastics",
+          "Clean Crevices & Seams",
+          "Clean Middle Console",
+          "Clean Instrument Panels",
+          "Shampoo Carpet & Upholstery",
+          "Clean and Shampoo Seats",
+          "Detail Floor Mats",
+          "Air Freshener Treatment"
+        ],
+        "Exterior": [
+          "Professional Foam Cannon",
+          "Hand Wash",
+          "Clay Bar/paint decontamination",
+          "Light Bug and Tar Removal",
+          "Wheel Faces Cleaned",
+          "Inside of the Wheel Cleaned",
+          "Dress and Shine Tires",
+          "Clean Wheel Wells",
+          "Dress All Exterior Plastic",
+          "Ceramic Wax On Paint",
+          "Windows Clean In & Out",
+          "Spot Free Water (do not spot glass or paint)"
+        ]
+      }
     }
   }
 }

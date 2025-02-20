@@ -3,9 +3,10 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
-import { featuresSection, type RefItem } from "@/app/src/constants/header";
 import Button from "../common/Button";
 import { Params } from "@/app/types/types";
+import { FEATURES_SECTION } from "../../constants/mocks";
+import { RefItem } from "../../constants/header";
 
 export interface ServicesProps extends Params {}
 
@@ -49,7 +50,7 @@ export default function Services(props: ServicesProps) {
         </p>
 
         <div className="grid grid-cols-4 pt-20 lg:grid-cols-2 md:!grid-cols-1 md:pt-14">
-          {featuresSection.map((item, index) => (
+          {FEATURES_SECTION.map((item, index) => (
             <div
               key={index}
               className="relative cursor-pointer group"

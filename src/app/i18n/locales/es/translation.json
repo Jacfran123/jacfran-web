@@ -18,5 +18,186 @@
       "title": "INTERIOR DETALLADO",
       "subtitle": "Renueva el interior de tu vehículo como un concesionario"
     }
+  },
+  "FrequentlyAsked": {
+    "CarDetailing": {
+      "title": "Qué es el Detallado de Automóviles?",
+      "description": "El detallado de automóviles es una limpieza, restauración y protección exhaustiva del interior y exterior de un vehículo. Va más allá de un lavado de autos regular al abordar cada detalle de tu coche para mejorar su apariencia y proteger sus superficies. Detallado Completo de Automóviles en la área de la bahia"
+    },
+    "CarCleaning": {
+      "title": "Cuál es la diferencia entre la limpieza de coches y el detallado de coches?",
+      "description": "Un lavado de coches o limpieza de coches generalmente se centra en eliminar la suciedad superficial del exterior y, a veces, del interior. El detallado de coches es un servicio más completo, que incluye limpieza profunda, corrección de pintura, encerado, pulido y acondicionamiento interior para mantener y proteger tu vehículo. Limpieza interior de coches a domicilio."
+    },
+    "IGetMyCarDetailed": {
+      "title": "Cuán a menudo debería detallar mi coche?",
+      "description": "La frecuencia depende de cuánto conduces, las condiciones ambientales y tus preferencias personales. En promedio, recomendamos detallar tu coche cada 3-6 meses para mantener su apariencia y valor."
+    },
+    "BenefitsOfCarDetailing": {
+      "title": "Cuáles son los beneficios del detallado de automóviles?",
+      "description": "El detallado de automóviles ayuda a:",
+      "points": {
+        "one": "Proteger la pintura y el interior del vehículo de daños.",
+        "two": "Mantener o aumentar el valor de reventa de tu coche.",
+        "three": "Mejorar tu experiencia de conducción con un vehículo fresco y limpio.",
+        "four": "Mejorar la apariencia general de tu coche."
+      }
+    },
+    "FullCarDetail": {
+      "title": "Qué incluye un detallado completo de automóviles?",
+      "description": "Un detallado completo de automóviles (detallado exterior e interior) típicamente incluye:",
+      "points": {
+        "one": "Servicios Exteriores: Lavado, Encerado, Pulido, Tratamiento con barra de arcilla y Protección de la pintura.",
+        "two": "Servicios Interiores: Limpieza profunda de alfombras, Asientos, Tapicería, Tratamiento del tablero, Paneles y Eliminación de olores."
+      }
+    },
+    "DetailingCost": {
+      "title": "Cuánto cuesta el detallado de coches?",
+      "description": "El costo depende del nivel de servicio, el tamaño de tu coche y cualquier tratamiento adicional como recubrimiento cerámico o corrección de pintura. Consulta nuestros paquetes o contáctanos para obtener una cotización personalizada."
+    },
+    "WillDetailingProtect": {
+      "title": "El detallado protegerá la pintura de mi coche?",
+      "description": "¡Sí! El encerado, los selladores o los recubrimientos cerámicos aplicados durante el detallado actúan como capas protectoras, resguardando la pintura de tu coche de los rayos UV, la suciedad y los contaminantes."
+    },
+    "MobileCarDetailing": {
+      "title": "Cuál es la diferencia entre el detallado de coches a domicilio y los servicios de detallado regulares?",
+      "description": "Los servicios de detallado de coches a domicilio llevan el detallado profesional directamente a tu ubicación. Esta conveniencia es ideal para aquellos que buscan “detallado de coches cerca de mí” o “detallado a domicilio cerca de mí”. Nuestros servicios cubren detallado interior de coches a domicilio, detallado exterior de coches a domicilio, y más en áreas como la área de la Bahía."
+    },
+    "OfferSameDayCar": {
+      "title": "Ofrecen servicios de detallado de coches el mismo día?",
+      "description": "Sí, los servicios el mismo día están disponibles según nuestro horario. Contáctanos temprano para verificar la disponibilidad en la área de la bahia."
+    },
+    "CanAutoDetailingRemove": {
+      "title": "El detallado de automóviles puede eliminar rasguños o manchas?",
+      "description": "Sí, el detallado profesional de automóviles puede abordar rasguños y manchas menores. Servicios como la corrección de pintura y el champú interior están diseñados para restaurar las superficies de tu vehículo."
+    }
+  },
+  "Reviews": {
+    "onePerson": {
+      "name": "Emily R. from San Francisco",
+      "description": "El servicio de detallado fue excepcional. Mi auto quedó como nuevo, tanto por dentro como por fuera. El equipo fue profesional y eficiente, y definitivamente regresaré para futuros servicios."
+    },
+    "twoPerson": {
+      "name": "Mike S. from Oakland",
+      "description": "No puedo estar más satisfecho con el detallado que recibí. El equipo hizo un trabajo increíble eliminando cada mancha y dejando mi coche reluciente. ¡Altamente recomendado!"
+    },
+    "threePerson": {
+      "name": "Laura P. from San Jose",
+      "description": "Quedé impresionada con la atención al detalle y la dedicación del equipo. Desde la restauración de los faros hasta la limpieza interior, todo fue impecable. ¡Definitivamente vale la pena!"
+    }
+  },
+  "Packages": {
+    "title": "Detalle completo",
+    "subtitle": "Paquetes",
+    "selectModel": "Seleccione su modelo de automóvil",
+    "details": "Detalle",
+    "interior": "Interior",
+    "exterior": "Exterior",
+    "Basic": {
+      "includes": {
+        "Interior": [
+          "Desinfección completa",
+          "Aspirado interior",
+          "Tratamiento de manchas puntuales",
+          "Detalle del volante",
+          "Limpieza de todas las ventanas por dentro",
+          "Limpieza de plásticos",
+          "Limpieza de hendiduras y costuras",
+          "Clean Middle Console",
+          "Limpieza de la consola central",
+          "Limpieza de paneles de instrumentos",
+          "Champú para alfombras y tapicería",
+          "Limpieza y champú para asientos",
+          "Detallado de las alfombrillas",
+          "Tratamiento ambientador"
+        ],
+        "Exterior": [
+          "Cañón de espuma profesional",
+          "Lavado a mano",
+          "Descontaminación de pintura con barra de arcilla",
+          "Eliminación ligera de insectos y alquitrán",
+          "Limpieza de la superficie de las ruedas",
+          "Limpieza del interior de las ruedas",
+          "Abrillantado y brillo de neumáticos",
+          "Limpieza de los pozos de las ruedas",
+          "Acondicionamiento de todos los plásticos exteriores",
+          "Cera de carnauba en la pintura",
+          "Limpieza de ventanas por dentro y por fuera",
+          "Agua sin manchas (no deja manchas en el vidrio ni en la pintura)"
+        ]
+      }
+    },
+    "Gold": {
+      "includes": {
+        "Interior": [
+          "Eliminación de manchas pesadas | Champú interior | Limpieza con vapor",
+          "Desinfección completa",
+          "Aspirado interior",
+          "Tratamiento de manchas puntuales",
+          "Detalle del volante",
+          "Limpieza de todas las ventanas por dentro",
+          "Limpieza de plásticos",
+          "Limpieza de hendiduras y costuras",
+          "Limpieza de la consola central",
+          "Limpieza de paneles de instrumentos",
+          "Champú para alfombras y tapicería",
+          "Limpieza y champú para asientos",
+          "Detallado de las alfombrillas",
+          "Tratamiento ambientador"
+        ],
+        "Exterior": [
+          "Cañón de espuma profesional",
+          "Lavado a mano",
+          "Descontaminación de pintura con barra de arcilla",
+          "Eliminación ligera de insectos y alquitrán",
+          "Limpieza de la superficie de las ruedas",
+          "Limpieza del interior de las ruedas",
+          "Limpieza de los pozos de las ruedas",
+          "Acondicionamiento de todos los plásticos exteriores",
+          "Cera cerámica en la pintura",
+          "Ceramic Wax On Paint",
+          "Limpieza de ventanas por dentro y por fuera",
+          "Agua sin manchas (no deja manchas en el vidrio ni en la pintura)"
+        ]
+      }
+    },
+    "Diamond": {
+      "prices": {
+        "SEDAN": { "before": 1499, "now": 1274 },
+        "SUV": { "before": 1749, "now": 1486 },
+        "VAN": { "before": 1949, "now": 1656 }
+      },
+      "includes": {
+        "Interior": [
+          "Eliminación de manchas pesadas | Champú interior | Limpieza con vapor",
+          "Desinfección completa",
+          "Aspirado interior",
+          "Tratamiento de manchas puntuales",
+          "Detalle del volante",
+          "Limpieza de todas las ventanas por dentro",
+          "Limpieza de plásticos",
+          "Limpieza de hendiduras y costuras",
+          "Limpieza de la consola central",
+          "Limpieza de paneles de instrumentos",
+          "Champú para alfombras y tapicería",
+          "Limpieza y champú para asientos",
+          "Detallado de las alfombrillas",
+          "Tratamiento ambientador"
+        ],
+        "Exterior": [
+          "Cañón de espuma profesional",
+          "Lavado a mano",
+          "Descontaminación de pintura con barra de arcilla",
+          "Eliminación ligera de insectos y alquitrán",
+          "Limpieza de la superficie de las ruedas",
+          "Limpieza del interior de las ruedas",
+          "Abrillantado y brillo de neumáticos",
+          "Limpieza de los pozos de las ruedas",
+          "Acondicionamiento de todos los plásticos exteriores",
+          "Cera cerámica en la pintura",
+          "Limpieza de ventanas por dentro y por fuera",
+          "Agua sin manchas (no deja manchas en el vidrio ni en la pintura)"
+        ]
+      }
+    }
   }
 }

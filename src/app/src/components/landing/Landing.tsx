@@ -46,7 +46,7 @@ export default function Landing(props: LandingProps) {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 100;
+      const scrollPosition = window.scrollY + 0;
 
       for (const section of SECTIONS) {
         const element = document.getElementById(section.id);
@@ -56,7 +56,6 @@ export default function Landing(props: LandingProps) {
             scrollPosition >= offsetTop &&
             scrollPosition < offsetTop + offsetHeight
           ) {
-            //setActiveSection(section.id);
             break;
           }
         }
@@ -75,7 +74,7 @@ export default function Landing(props: LandingProps) {
         onSectionClick={scrollToSection}
       />
       {SECTIONS.map(({ id, component: Component }) => (
-        <section key={id} id={id} className="scroll-mt-16">
+        <section key={id} id={id} className="scroll-mt-[100px]">
           <Component lng={lng} />
         </section>
       ))}

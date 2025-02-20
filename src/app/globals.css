@@ -33,5 +33,19 @@ body {
 }
 
 .swiper-pagination-bullet {
-  background-color: red;
+  background-color: transparent;
+}
+
+.overflow-auto::-webkit-scrollbar {
+  width: 5px;
+}
+
+.overflow-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb {
+  background: #1c9950;
+  border-radius: 4px;
+  cursor: pointer;
 }

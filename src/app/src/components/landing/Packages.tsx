@@ -12,12 +12,16 @@ import { Navigation, Pagination } from "swiper/modules";
 import { Params } from "@/app/types/types";
 import ArrowRight from "@/app/src/assets/arrow_forward.svg";
 import ArrowLeft from "@/app/src/assets/arrow_back.svg";
+import { useTranslation } from "react-i18next";
 
 export interface PackagesProps extends Params {}
 
 export default function Packages(props: PackagesProps) {
-  const [selectedCar, setSelectedCar] = useState<Car | null>(CARS[0]);
-  const [selectedPackage, setSelectedPackage] = useState<Package | null>(null);
+  const { lng } = props;
+  const { t } = useTranslation(lng);
+
+  const [selectedCar, setSelectedCar] = useState<any | null>(CARS[0]);
+  const [selectedPackage, setSelectedPackage] = useState<any | null>(null);
 
   useEffect(() => {
     setSelectedPackage(CARS[0].packages[0]);
@@ -32,23 +36,18 @@ export default function Packages(props: PackagesProps) {
     setSelectedPackage(pkg);
   };
 
-  const getDetails = () => {
-    if (selectedPackage) {
-      return selectedPackage.details;
-    }
-    return selectedCar?.packages.find((p) => p.name === "Basic")?.details || [];
-  };
-
   return (
     <section className="bg-bg">
-      <p className="uppercase px-14 md:p-0 md:pt-5 md:mb-5 text-primary text-[clamp(65px,7vw,180px)] font-neueRegular md:px-5">
-        full detail
-        <span className="text-bg-primary text-[clamp(34px,3vw,64px)] pl-2">
-          Packages
-        </span>
-      </p>
+      <div className="w-full pl-[175px] md:pl-[95px] sm:!pl-0">
+        <p className="uppercase md:p-0 md:pt-5 md:mb-5 text-primary text-[clamp(65px,7vw,180px)] font-neueRegular md:px-5">
+          {t("Packages.title")}
+          <span className="text-bg-primary text-[clamp(34px,3vw,64px)] pl-2">
+            {t("Packages.subtitle")}
+          </span>
+        </p>
+      </div>
       <div
-        className="h-[738px] w-full bg-cover bg-center md:h-[auto] "
+        className="w-full bg-cover bg-center"
         style={{
           backgroundImage: `url(${
             new URL("@/app/src/assets/packages_background.png", import.meta.url)
@@ -61,7 +60,7 @@ export default function Packages(props: PackagesProps) {
             <div className="grid grid-cols-[377px,158px,2fr] md:grid-cols-1">
               <div>
                 <h3 className="bg-primary font-robotoBold text-x2l text-textColor-secondary p-4 text-center">
-                  Select your model car
+                  {t("Packages.selectModel")}
                 </h3>
                 <div className="relative">
                   <button
@@ -156,10 +155,10 @@ export default function Packages(props: PackagesProps) {
 
               <div className="h-full flex flex-col">
                 <h3 className="bg-primary font-robotoBold text-x2l text-textColor-secondary p-4 text-center">
-                  Packages
+                  {t("Packages.subtitle")}
                 </h3>
                 <div className="flex flex-col h-full md:flex-row sm:h-[97px]">
-                  {selectedCar?.packages.map((pkg) => (
+                  {selectedCar?.packages.map((pkg: any) => (
                     <div
                       key={pkg.name}
                       onClick={() => handlePackageSelect(pkg)}
@@ -183,7 +182,7 @@ export default function Packages(props: PackagesProps) {
 
               <div>
                 <h3 className="bg-primary font-robotoBold text-x2l text-textColor-secondary p-4 text-center">
-                  Details
+                  {t("Packages.details")}
                 </h3>
                 <div className="py-6 px-5 relative md:px-3">
                   <div className="rounded-tl-xl rounded-bl-xl text-right absolute right-0 top-4 h-[48px] w-[107px] flex items-center justify-center bg-gradient-to-r from-[#32CC72] to-[#194F30]">
@@ -191,37 +190,101 @@ export default function Packages(props: PackagesProps) {
                       ${selectedPackage?.amount}
                     </span>
                   </div>
-                  <ul className="space-y-1">
-                    {getDetails().map((detail, index) => (
-                      <li key={index} className="flex items-center">
-                        <Image
-                          alt="Icon Check"
-                          src={IconCheck}
-                          height={24}
-                          width={24}
-                          loading="lazy"
-                        />
-                        <span className="text-sm leading-[18.75px] font-robotoBold text-justify lg:w-[65%]">
-                          {detail}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="overflow-auto h-[288px] md:h-auto md:overflow-hidden pr-3">
+                    <ul className="pt-5">
+                      <ul className="pl-5">
+                        <li className="font-robotoBold text-md py-2">
+                          {t(selectedPackage?.includesPlans?.interiorTitle)}
+                        </li>
+                        {selectedPackage?.includesPlans?.interior?.flatMap(
+                          (key: any, index: any) => {
+                            const translatedItems = t(key, {
+                              returnObjects: true,
+                            });
+
+                            if (
+                              typeof translatedItems === "object" &&
+                              translatedItems !== null
+                            ) {
+                              return Object.values(translatedItems).map(
+                                (translatedText, subIndex) => (
+                                  <li
+                                    key={`${index}-${subIndex}`}
+                                    className="flex items-center"
+                                  >
+                                    <Image
+                                      alt="Icon Check"
+                                      src={IconCheck}
+                                      height={24}
+                                      width={24}
+                                      loading="lazy"
+                                    />
+                                    <span className="text-sm leading-[18.75px] font-robotoBold text-justify lg:w-[65%]">
+                                      {translatedText}
+                                    </span>
+                                  </li>
+                                )
+                              );
+                            }
+                          }
+                        )}
+                      </ul>
+                    </ul>
+                    <ul className="space-y-3">
+                      <ul className=" pl-5">
+                        <li className="font-robotoBold text-md my-3">
+                          {t(selectedPackage?.includesPlans?.exteriorTitle)}
+                        </li>
+                        {selectedPackage?.includesPlans?.exterior?.flatMap(
+                          (key: any, index: any) => {
+                            const translatedItems = t(key, {
+                              returnObjects: true,
+                            });
+
+                            if (
+                              typeof translatedItems === "object" &&
+                              translatedItems !== null
+                            ) {
+                              return Object.values(translatedItems).map(
+                                (translatedText, subIndex) => (
+                                  <li
+                                    key={`${index}-${subIndex}`}
+                                    className="flex items-center"
+                                  >
+                                    <Image
+                                      alt="Icon Check"
+                                      src={IconCheck}
+                                      height={24}
+                                      width={24}
+                                      loading="lazy"
+                                    />
+                                    <span className="text-sm leading-[18.75px] font-robotoBold text-justify lg:w-[65%]">
+                                      {translatedText}
+                                    </span>
+                                  </li>
+                                )
+                              );
+                            }
+                          }
+                        )}
+                      </ul>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-full flex justify-center items-center h-[40%] md:py-[40px]">
+        <div className="w-full flex justify-center items-center h-[40%] md:py-[40px] py-10">
           <div className="flex w-[320px] h-[48px] border rounded-lg border-bg-primary bg-bg-secondary">
             <div className="w-full cursor-pointer flex items-center justify-center">
               <p className="font-robotoBold text-x2l text-textColor-secondary">
-                Book Now
+                {t("bookNow")}
               </p>
             </div>
             <div className="w-full cursor-pointer flex items-center justify-center border rounded-br-lg rounded-tr-lg border-bg bg-bg">
               <p className="font-robotoBold text-x2l text-textColor-secondary">
-                Get a Quote
+                {t("getAquote")}
               </p>
             </div>
           </div>

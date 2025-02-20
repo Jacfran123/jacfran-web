@@ -50,13 +50,13 @@ export default function SwiperText(props: SwiperTextProps) {
           <SwiperSlide key={`${title} - ${subtitle}`}>
             <h1
               ref={(el) => (titleRefs.current[index] = el)}
-              className="text-[clamp(36px,7vw,110px)] leading-[clamp(46px,7vw,135px)] font-neueRegular uppercase text-textColor-secondary"
+              className="text-[clamp(44px,7vw,110px)] leading-[clamp(46px,7vw,135px)] font-neueRegular uppercase text-textColor-secondary"
             >
               {t(title)}
             </h1>
             <h2
               ref={(el) => (subtitleRefs.current[index] = el)}
-              className="font-neueRegular text-textColor-secondary text-[clamp(10px,3vw,30px)]"
+              className="font-neueRegular text-textColor-secondary text-[clamp(12px,3vw,30px)]"
             >
               {t(subtitle)}
             </h2>

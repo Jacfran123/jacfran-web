@@ -73,6 +73,16 @@ export default {
         ".p-container": {
           padding: "27px 55px 27px 55px",
         },
+        ".list-circle": {
+          listStyleType: "none",
+          position: "relative",
+          paddingLeft: "1em",
+        },
+        ".list-circle li::before": {
+          content: '"• "',
+          position: "absolute",
+          left: 0,
+        },
       });
     }),
   ],
