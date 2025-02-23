@@ -293,15 +293,18 @@ export const CARS = [
 export const HOME_TITLE = [
   {
     title: "Home.Ceramic.title",
-    subtitle: "Home.Ceramic.subtitle",
+    subtitleGreen: "Home.Ceramic.subtitleGreen",
+    subtitleWhite: "Home.Ceramic.subtitleWhite",
   },
   {
     title: "Home.Detailing.title",
-    subtitle: "Home.Detailing.subtitle",
+    subtitleGreen: "Home.Detailing.subtitleGreen",
+    subtitleWhite: "Home.Detailing.subtitleWhite",
   },
   {
     title: "Home.Interior.title",
-    subtitle: "Home.Interior.subtitle",
+    subtitleGreen: "Home.Interior.subtitleGreen",
+    subtitleWhite: "Home.Interior.subtitleWhite",
   },
 ];
 
@@ -318,53 +321,53 @@ export const GALLERY = [
 
 export const FEATURES_SECTION = [
   {
-    title: "CERAMIC COATING",
-    subtitle: "View More",
+    title: "Services.engineWashandConditioning.title",
     logo: Cuero,
+    descriptions: ["Services.engineWashandConditioning.descriptions"],
   },
   {
-    title: "engine wash",
-    subtitle: "View More",
+    title: "Services.headlightRestoration.title",
     logo: Faros,
+    descriptions: ["Services.headlightRestoration.descriptions"],
   },
   {
-    title: "Correction of paint",
-    subtitle: "View More",
+    title: "Services.windowPolishing.title",
     logo: Interior,
+    descriptions: ["Services.windowPolishing.descriptions"],
   },
   {
-    title: "Correction of paint",
-    subtitle: "View More",
+    title: "Services.odorRemoval.title",
     logo: Motor,
+    descriptions: ["Services.odorRemoval.descriptions"],
   },
   {
-    title: "CERAMIC COATING",
-    subtitle: "View More",
+    title: "Services.interiorCleaning.title",
     logo: Ozono,
+    descriptions: ["Services.interiorCleaning.descriptions"],
   },
   {
-    title: "engine wash",
-    subtitle: "View More",
+    title: "Services.paintCorrection.title",
     logo: Mascotas,
+    descriptions: ["Services.paintCorrection.descriptions"],
   },
   {
-    title: "Correction of paint",
-    subtitle: "View More",
+    title: "Services.ceramicCoating.title",
     logo: Pintura,
+    descriptions: ["Services.ceramicCoating.descriptions"],
   },
   {
-    title: "Correction of paint",
-    subtitle: "View More",
+    title: "Services.petHairRemoval.title",
     logo: Plastico,
+    descriptions: ["Services.petHairRemoval.descriptions"],
   },
   {
-    title: "Correction of paint",
-    subtitle: "View More",
+    title: "Services.leatherConditioningHydration.title",
     logo: Recubrimiento,
+    descriptions: ["Services.leatherConditioningHydration.descriptions"],
   },
   {
-    title: "Correction of paint",
-    subtitle: "View More",
+    title: "Services.plasticConditioning.title",
     logo: Ventanas,
+    descriptions: ["Services.plasticConditioning.descriptions"],
   },
 ];

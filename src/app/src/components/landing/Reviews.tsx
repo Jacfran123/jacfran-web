@@ -3,11 +3,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import Image from "next/image";
-import { useState } from "react";
 import { TESTIMONIALS } from "../../constants/mocks";
 import { Params } from "@/app/types/types";
 import ArrowLeft from "@/app/src/assets/carousel/Reviews/arrow_left.svg";
 import ArrowRight from "@/app/src/assets/carousel/Reviews/arrow_right.svg";
+import ReviewIcon from "@/app/src/assets/review_icon.svg";
 import "swiper/css";
 import "swiper/css/navigation";
 import { useTranslation } from "react-i18next";
@@ -17,12 +17,6 @@ export interface ReviewsProps extends Params {}
 export default function Reviews(props: ReviewsProps) {
   const { lng } = props;
   const { t } = useTranslation(lng);
-
-  const [visibleIds, setVisibleIds] = useState<number>(0);
-
-  const handleSlideChange = (swiper: any) => {
-    setVisibleIds(swiper.realIndex + 1);
-  };
 
   return (
     <section
@@ -34,12 +28,15 @@ export default function Reviews(props: ReviewsProps) {
           id="reviews-title"
           className="font-neueRegular text-primary text-[60px] uppercase leading-[60px] text-center"
         >
-          Reviews
+          {t("Reviews.title")}
         </h2>
         <p className="text-md font-robotoBold text-textColor-secondary uppercase text-center">
-          That Inspire
+          {t("Reviews.description")}
         </p>
-        <div className="pt-16 md:pt-8 w-full flex items-center justify-center">
+        <div className="w-full flex justify-center pt-10">
+          <Image src={ReviewIcon} alt={"Reviews Icons"} />
+        </div>
+        <div className="pt-10 md:pt-8 w-full flex items-center justify-center">
           <div className="w-[753px] md:w-full bg-bg-accent">
             <div className="w-full relative">
               <button
@@ -69,8 +66,6 @@ export default function Reviews(props: ReviewsProps) {
                 nextEl: ".swiper-button-next",
               }}
               className="w-full max-w-4xl mx-auto px-12"
-              onSlideChange={(swiper) => handleSlideChange(swiper)}
-              onSwiper={(swiper) => handleSlideChange(swiper)}
               style={{ backgroundColor: "#050409" }}
             >
               {TESTIMONIALS.map((testimonial) => (
@@ -80,10 +75,7 @@ export default function Reviews(props: ReviewsProps) {
                   className="bg-bg-accent"
                 >
                   <div className="flex flex-col items-center text-center p-4 h-[256px] bg-bg-accent">
-                    <blockquote
-                      className="font-robotoBold text-[32px] text-textColor-secondary font-normal md:text-x2l"
-                      //cite={testimonial.source || "#"}
-                    >
+                    <blockquote className="font-robotoBold text-[32px] text-textColor-secondary font-normal md:text-x2l">
                       "{t(testimonial.quote)}"
                     </blockquote>
                     <div className="text-white uppercase pt-5">
@@ -109,26 +101,6 @@ export default function Reviews(props: ReviewsProps) {
                 />
               </button>
             </div>
-            {/* <div className="flex justify-center items-center pt-10 md:pl-10">
-              {REVIEWS_IMAGE.map((element) => {
-                return (
-                  <div
-                    key={element.id}
-                    className={`w-[100px] transition-transform duration-300 ${
-                      visibleIds === element.id ? "scale-125" : ""
-                    }`}
-                  >
-                    <Image
-                      src={element.image}
-                      alt={element.alt || ""}
-                      width={72}
-                      height={72}
-                      loading="lazy"
-                    />
-                  </div>
-                );
-              })}
-            </div> */}
           </div>
           <style jsx>{`
             .swiper-button-prev::after,

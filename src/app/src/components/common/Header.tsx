@@ -5,14 +5,14 @@ import Image from "next/image";
 import { useCookies } from "react-cookie";
 import { cookieName } from "@/app/i18n/settings";
 import Button from "./Button";
-import { headerNav } from "@/app/src/constants/header";
 import JacFranLogo from "@/app/src/assets/logo_header.svg";
 import WorldLogo from "@/app/src/assets/world.svg";
 import Menu from "@/app/src/assets/menu.svg";
-import clsx from "clsx";
 import { useTranslation } from "@/app/i18n/client";
 import { Params } from "@/app/types/types";
 import { useCallback, useEffect, useState } from "react";
+import Close from "@/app/src/assets/close_white.svg";
+import { usePathname } from "next/navigation";
 
 interface HeaderProps extends Params {
   activeSection: string;
@@ -21,18 +21,18 @@ interface HeaderProps extends Params {
 
 export default function Header(props: HeaderProps) {
   const { onSectionClick, activeSection, lng } = props;
-  const navigation = [
-    { id: "home", label: "home" },
-    { id: "aboutus", label: "aboutUs" },
-    { id: "services", label: "services" },
-    { id: "gallery", label: "gallery" },
-    { id: "coverage", label: "coverage" },
-  ];
+  const pathname = usePathname();
+
+  const [router, setRouter] = useState<{ id: string; label: string }[]>([]);
 
   const [cookies] = useCookies([cookieName]);
   const defaultLang = cookies.i18next;
-  const [currentLanguage, setCurrentLanguage] = useState(lng || defaultLang);
+  const [currentLanguage, setCurrentLanguage] = useState<any>(
+    lng || defaultLang
+  );
   const { t, i18n } = useTranslation(currentLanguage);
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     if (lng && lng !== defaultLang) {
@@ -45,6 +45,32 @@ export default function Header(props: HeaderProps) {
     setCurrentLanguage(newLanguage);
     i18n.changeLanguage(newLanguage);
   }, [currentLanguage, i18n]);
+
+  const handleClickMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  useEffect(() => {
+    if (pathname.replace("/", "") === "campaign") {
+      const navigationCampaign = [
+        { id: "home", label: "home" },
+        { id: "aboutus", label: "aboutUs" },
+        { id: "gallery", label: "gallery" },
+        { id: "packages", label: "packages" },
+        { id: "contact", label: "contactUs" },
+      ];
+      setRouter(navigationCampaign);
+    } else {
+      const navigationLanding = [
+        { id: "home", label: "home" },
+        { id: "aboutus", label: "aboutUs" },
+        { id: "packages", label: "packages" },
+        { id: "services", label: "services" },
+        { id: "gallery", label: "gallery" },
+      ];
+      setRouter(navigationLanding);
+    }
+  }, [pathname]);
 
   return (
     <header
@@ -68,11 +94,10 @@ export default function Header(props: HeaderProps) {
           className="flex items-center gap-10 font-semiBold lg:gap-10 lg:hidden"
           aria-label="Primary navigation"
         >
-          {navigation.map((item) => (
+          {router.map((item) => (
             <li key={item.id}>
               <button
                 onClick={() => {
-                  console.log(item.id);
                   onSectionClick(item.id);
                 }}
                 className={`nav-link uppercase font-robotoBold font-normal ${
@@ -104,17 +129,49 @@ export default function Header(props: HeaderProps) {
             {t("getAquote")}
           </Button>
         </div>
-        <div className="hidden lg:block">
-          <Image
-            src={Menu || "/placeholder.svg"}
-            className="cursor-pointer"
-            alt="Menu icon"
-            width={40}
-            height={40}
-            priority
-          />
-        </div>
+        <button className="hidden lg:block" onClick={handleClickMenu}>
+          {isMenuOpen ? (
+            <Image src={Close} alt="Close icon" width={40} height={40} />
+          ) : (
+            <Image src={Menu} alt="Menu icon" width={40} height={40} />
+          )}
+        </button>
       </div>
+      {isMenuOpen && (
+        <div className="bg-[#212121] absolute top-20 left-0 w-screen h-screen z-[10000]">
+          <div className="flex justify-between p-5">
+            <nav aria-label="Primary navigation">
+              <ul className="list-none">
+                {router.map((item) => (
+                  <li key={item.id}>
+                    <button
+                      onClick={() => {
+                        onSectionClick(item.id);
+                        handleClickMenu();
+                      }}
+                      className={`nav-link uppercase font-robotoBold font-normal pb-5 ${
+                        activeSection === item.id
+                          ? "text-primary"
+                          : "text-textColor-secondary"
+                      }`}
+                    >
+                      {t(item.label)}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div>
+              <Image
+                alt="World icon to toggle language mobile"
+                src={WorldLogo}
+                onClick={handleLanguageChange}
+                priority
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

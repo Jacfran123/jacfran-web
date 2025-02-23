@@ -1,3 +1,3 @@
 export type Params = {
-  lng: string;
+  lng: "en" | "es";
 };

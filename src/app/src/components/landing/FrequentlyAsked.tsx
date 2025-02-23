@@ -66,11 +66,11 @@ export default function FrequentlyAsked(props: FrequentlyAskedProps) {
         </div>
       </div>
       <div className="pt-16 pr-[40px] lg:pt-[40px] lg:px-[20px]">
-        <h2 className="text-primary font-neueRegular text-[clamp(55px,13vw,80px)] leading-[90px]">
-          Frequently Asked
+        <h2 className="text-primary font-neueRegular text-[clamp(45px,13vw,70px)] leading-[90px] md:leading-[60px]">
+          {t("FrequentlyAsked.title")}
         </h2>
         <p className="text-neutral font-robotoBold font-normal text-x4l pb-5 lg:pb-2">
-          Question
+          {t("FrequentlyAsked.description")}
         </p>
         {FREQUENTLYASKED.map((element) => (
           <article className="bg-bg-neutral" key={`frequently-${element.id}`}>

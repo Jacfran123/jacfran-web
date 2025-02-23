@@ -6,21 +6,39 @@
   "coverage": "Coverage",
   "getAquote": "get a quote",
   "bookNow": "Book Now",
+  "viewMore": "View More",
+  "packages": "packages",
+  "contactUs": "contact Us",
   "Home": {
     "Ceramic": {
       "title": "Ceramic Coating",
-      "subtitle": "Keep Your car´s paint pristine and radiant"
+      "subtitleGreen": "Your car as just",
+      "subtitleWhite": "said from the dealership."
     },
     "Detailing": {
-      "title": "CAR DETAILING",
-      "subtitle": "Keep Your Car Like New! Refresh your Car´s interior & Shine the Exterior"
+      "title": "Professional detailing in the Bay Area",
+      "subtitleGreen": "Restore your vehicle's shine,",
+      "subtitleWhite": "make it look like new."
     },
     "Interior": {
       "title": "DETAILED INTERIOR",
-      "subtitle": "Renew the interior of your vehicle like a dealers"
+      "subtitleGreen": "Renew the interior",
+      "subtitleWhite": "of your vehicle down to the last detail."
     }
   },
+  "About": {
+    "title": "About Us",
+    "subDescription": "Satisfaction Guaranteed",
+    "information": "Our commitment is your satisfaction first. 100% Guaranteed.",
+    "description": "At Jacfran, we specialize in vehicle detailing, dedicated to providing top-quality service for all our clients. With years of experience in the industry, our passionate team of professionals strives to transform every vehicle, restoring its original shine and protection. We pride ourselves on using premium products and advanced techniques to ensure that every car not only looks immaculate but is also protected for the long term. Mobile service in Bay Area, we serve the local community with pride and excellence."
+  },
+  "Gallery": {
+    "title": "The best service in bay area",
+    "description": "Protect your vehicle’s finish from road debris, scratches, and environmental damage with our premium Paint Protection."
+  },
   "FrequentlyAsked": {
+    "title": "Frequently Asked",
+    "description": "Question",
     "CarDetailing": {
       "title": "What is Car Detailing? ",
       "description": "Car detailing is a thorough cleaning, restoration, and protection of a vehicle’s interior and exterior. It goes beyond a regular car wash by addressing every detail of your car to enhance its appearance and protect its surfaces. Full Car Detail in bay area."
@@ -73,6 +91,8 @@
     }
   },
   "Reviews": {
+    "title": "Reviews",
+    "description": "That Inspire",
     "onePerson": {
       "name": "Emily R. from San Francisco",
       "description": "The detailing service was exceptional. My car looks brand new inside and out. The team was professional and efficient, and I will definitely be coming back for future services."
@@ -199,5 +219,180 @@
         ]
       }
     }
+  },
+  "Services": {
+    "title": "ADDITIONAL SERVICES",
+    "description": "If what you want is a unique service for your vehicle, we offer you a variety of options for your choice.",
+    "engineWashandConditioning": {
+      "title": "Engine Wash and Conditioning",
+      "descriptions": [
+        {
+          "title": "Superficial Wash with Pressure Water and Degreaser (tp) 35min value $80:",
+          "description": "This method uses high-pressure water combined with specific degreasing products to remove dirt and surface oil from the engine. Ideal for regular maintenance, this wash helps keep the engine clean and in good working order by preventing the buildup of residues that can affect its performance.",
+          "conditioning": "Conditioning: We proceed to lubricate all the rubbers and plastics for a better appearance and extended lifespan."
+        },
+        {
+          "title": "Intensive Wash with Steam Degreaser (tp) 50min value $100:",
+          "description": "Using hot steam and high-efficiency degreasers, this wash reaches the hardest-to-clean areas of the engine, removing accumulated grease and dirt. The use of steam ensures a deep clean without damaging sensitive engine components, in addition to being a more eco-friendly method that reduces the use of harsh chemicals.",
+          "conditioning": "Conditioning: We proceed to lubricate all the rubbers and plastics for a better appearance and extended lifespan."
+        },
+        {
+          "title": "Extreme Wash with Degreaser and Shampoo for Upper and Lower Parts (tp) 60min value $120:",
+          "description": "This exhaustive process combines the use of powerful degreasers and specialized shampoo to clean both the upper and lower parts of the engine. The cleaning includes the removal of oil, grease, and other contaminants in all areas of the engine, ensuring that all parts are free of residues and work optimally. This cleaning is recommended for discarding possible leaks.",
+          "conditioning": "Conditioning: We proceed to lubricate all the rubbers and plastics for a better appearance and extended lifespan."
+        }
+      ]
+    },
+    "headlightRestoration": {
+      "title": "Headlight Restoration",
+      "descriptions": [
+        {
+          "title": "Restoration with Sanding and Polishing (tp) 30min value $60:",
+          "description": "This technique starts with a sanding process that removes the opaque and yellowish layer that forms on the headlights due to sun exposure and other elements. Subsequently, a polishing is done that restores the original clarity and shine to the headlights, improving both the appearance of the vehicle and visibility during night driving."
+        },
+        {
+          "title": "Restoration with Sanding, Polishing, and a Transparent Coat (tp) 50min value $100:",
+          "description": "In addition to sanding and polishing, a transparent coating is applied to protect the headlights from future damage. This coating acts as a barrier against UV rays and other elements, keeping the headlights clear and bright for longer and reducing the need for future restorations."
+        }
+      ]
+    },
+    "windowPolishing": {
+      "title": "Window Polishing",
+      "descriptions": [
+        {
+          "title": "Window Polishing (tp) 60min value $100:",
+          "subTitle": "One-Step Cutting Polish to Remove Water Marks and Imperfections:",
+          "description": "This service focuses on removing water marks, stains, and small imperfections from the vehicle's windows using specialized polishing products. The cutting polish process removes the damaged surface layers of the glass, returning a clear and spotless appearance, improving both aesthetics and visibility."
+        }
+      ]
+    },
+    "odorRemoval": {
+      "title": "Odor Removal with Ozone",
+      "descriptions": [
+        {
+          "title": "Odor Removal with Ozone (tp) 35min value $50:",
+          "description": "The ozone odor removal process uses ozone generators to neutralize and eliminate unpleasant odors from the vehicle's interior. Ozone acts on the odor molecules, bacteria, and fungi, decomposing and completely eliminating them. This method is highly effective and leaves the vehicle's interior with a fresh and odor-free environment. This procedure helps to clean the vehicle's airways."
+        }
+      ]
+    },
+    "interiorCleaning": {
+      "title": "Interior Cleaning with Shampoo and Steam",
+      "descriptions": [
+        {
+          "title": "Interior Cleaning with Shampoo and Steam (tp) 1hr 60min value $100:",
+          "description": "This service includes a deep cleaning of the vehicle's seats, roof, and carpets using a combination of shampoo and steam. The steam disinfects and removes embedded dirt from surfaces, while the shampoo provides a deep clean and leaves a pleasant fragrance. This method is ideal for keeping the vehicle's interior clean and free of germs and stains, improving comfort and the environment for occupants."
+        }
+      ]
+    },
+    "paintCorrection": {
+      "title": "Paint Correction",
+      "descriptions": [
+        {
+          "title": "Three Stages of Polishing: Cutting Step, Refining Step, and Gloss Step:",
+          "description": "Paint correction is a detailed process that improves and restores the vehicle's appearance. The first step, cutting polish, removes deeper imperfections and scratches in the paint. The second step, refining polish, smooths the surface by eliminating remaining micro-scratches, holograms, and swirls, achieving a deeper smoothness in the paint. Finally, the gloss polish provides a deep and intense shine, leaving the vehicle's paint in optimal condition."
+        }
+      ]
+    },
+    "ceramicCoating": {
+      "title": "Ceramic Coating",
+      "descriptions": [
+        {
+          "title": "Introduction:",
+          "description": "There is no doubt that, over time, your car's paint can start to look a little less sleek than before. Your car is exposed to things like the sun, bugs, gasoline, dust, and other types of residues every time you drive it, which means its paint is slowly getting damaged. What a hassle, right? But what if there was a way to protect it? Luckily for you, there is! @Jacfranservices offers a ceramic coating for your vehicle's paint that can help protect and restore your vehicle's paint, so it shines like when you drove it off the lot. We'll explain some of the incredible benefits that ceramic coating can have for your vehicle. @Jacfranservices offers professional car cleaning services throughout the Bay Area, including interior and exterior cleaning, premium car washes, paint corrections, and ceramic coating."
+        },
+        {
+          "title": "What is Ceramic Coating?",
+          "description": "Ceramic coating is a semi-permanent or permanent coating (depending on the type) that is applied to the exterior of your vehicle to protect it from external paint damage. It is a nanoscopic paint treatment applied in liquid form but cures to form a hard layer on the vehicle's paint. It is usually composed of silicon dioxide (SiO2), often sourced from natural materials such as quartz and sand. When the chemicals bond with the car's paint, they create a hydrophobic effect (repelling water)."
+        },
+        {
+          "title": "5 Benefits of Ceramic Coatings:",
+          "list": [
+            "Protects the paint from external damage and contaminants.",
+            "By providing a high-resistance layer, ceramic coating makes subsequent cleanings quicker and easier.",
+            "The coating lasts longer than any other paint protection product available.",
+            "Improves cost-effectiveness by requiring less maintenance.",
+            "Your car will look like new, with the shine and color of your car standing out."
+          ]
+        },
+        {
+          "title": "Protect Your Paint:",
+          "description": "Every time you drive your car, you expose the paint to various contaminants that can cause damage. Ceramic coating provides a tough protective surface for your car's body that prevents any foreign matter from causing damage to your vehicle. It can withstand a significant amount of damage without showing visible effects on your car, such as discoloration, oxidation, and chemical stains. Ceramic coating can also protect your car from harmful UV rays that can cause oxidation. This is especially useful if you park your car outside."
+        },
+        {
+          "title": "Keeps Your Car Cleaner:",
+          "description": "Thanks to the hard surface provided by ceramic coating, dirt and debris simply slide off the surface rather than getting trapped in the small gaps of the vehicle's body. This means the car stays cleaner, and even when it needs washing, removing all that dirt takes much less time than it normally would."
+        },
+        {
+          "title": "Lasts Longer than Other Paint Protection Methods:",
+          "description": "Traditional paint coatings like wax wear out much faster than ceramic coatings. When you choose a ceramic coating from @The Car Wash, you can expect it to last for years without wearing off after being exposed to the weather, atmospheric components, bird droppings, or other potential contaminants."
+        },
+        {
+          "title": "Cost-Effective:",
+          "description": "One of the best advantages of ceramic coating is that it is a very cost-effective option for vehicle owners. While the initial investment may be slightly higher, in the long run, it will cost you less because you won' as much money on things like wax, car washes, and other exterior cleaning services. Depending on the type of ceramic coating you get, it is essentially a permanent solution, so you won't have to worry about replacing it year after year."
+        },
+        {
+          "title": "Looks Great:",
+          "description": "Who doesn't love the shiny look of a new car? With ceramic coating, not only is your vehicle's surface protected, but the new coating leaves a beautiful, candy-like shine that everyone will admire. It will bring out the best in your original paint and give your car the look it had when you first drove it."
+        }
+      ]
+    },
+    "petHairRemoval": {
+      "title": "Pet Hair Removal",
+      "descriptions": [
+        {
+          "title": "Pet Hair Removal (tp) 40min value $55:",
+          "description": "Using specialized tools and techniques, this service effectively removes pet hair from the vehicle's interior. High-power vacuums and special brushes are used to remove hairs adhered to seats and carpets, leaving the vehicle's interior clean and more hygienic."
+        }
+      ]
+    },
+    "leatherConditioningHydration": {
+      "title": "Leather Conditioning and Hydration",
+      "descriptions": [
+        {
+          "title": "Leather Conditioning and Hydration (tp) 35min value $60:",
+          "description": "First, all surfaces are cleaned using special and advanced products to obtain proper cleanliness of the vehicle's leather. Then, we treat with specialized products that condition and hydrate the leather. This process prevents wear, discoloration, and cracking, maintaining its appearance and texture soft and flexible. Regular leather conditioning extends its lifespan and improves the comfort and aesthetics of the vehicle's interior."
+        }
+      ]
+    },
+    "plasticConditioning": {
+      "title": "Plastic Conditioning, Hydration, and Protection",
+      "descriptions": [
+        {
+          "title": "Plastic Conditioning, Hydration, and Protection (tp) 40min value $60:",
+          "description": "This service includes the cleaning and treatment of plastic surfaces inside and outside the vehicle. Products are applied that hydrate and protect the plastic, preventing cracking and discoloration. Additionally, these products provide a protective barrier against dust and dirt, keeping plastic surfaces looking clean and shiny for longer."
+        }
+      ]
+    }
+  },
+  "Contact": {
+    "title": "Contact form",
+    "inputsName": {
+      "placeholder": "Name"
+    },
+    "inputsEmail": {
+      "placeholder": "Email Address"
+    },
+    "inputsArea": {
+      "placeholder": "How can we help you? feel free to get in touch!"
+    },
+    "inputsCheck": {
+      "placeholder": "I agree that my data is",
+      "borderText": "collected and stored"
+    },
+    "contactUs": {
+      "title": "Contact us",
+      "questionTitle": "have questions?",
+      "questionSubTitle": "get in touch!",
+      "description": "mobile service bay area, CA"
+    },
+    "button": {
+      "title": "GET IN TOUCH"
+    },
+    "viewContact": {
+      "title": "Didn't find what you were looking for?"
+    }
+  },
+  "Footer": {
+    "title": "All rights reserved."
   }
 }

@@ -89,9 +89,9 @@ export default function Hero(props: HeroProps) {
               subtitleRefs={subtitleRefs}
               lng={lng}
             />
-            <div className="hero-swiper-button-prev"></div>
-            <div className="hero-swiper-button-next"></div>
-            <div className="hero-swiper-pagination"></div>
+            <div className="hero-swiper-button-prev" />
+            <div className="hero-swiper-button-next" />
+            <div className="hero-swiper-pagination" />
           </div>
         </div>
         <div className="bg-gradient-to-t from-[#000000FF]/100 to-transparent h-[170px] w-full absolute bottom-1 left-0" />

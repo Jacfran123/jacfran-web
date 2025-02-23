@@ -1,25 +1,44 @@
 {
-  "home": "Home",
-  "aboutUs": "About Us",
+  "home": "Inicio",
+  "aboutUs": "Acerca de nosotros",
   "services": "Servicios",
   "gallery": "Galeria",
   "coverage": "Coverage",
-  "getAquote": "get a quote",
+  "getAquote": "Presupuesto",
+  "bookNow": "Reservar ahora",
+  "viewMore": "Ver más",
+  "packages": "Paquetes",
+  "contactUs": "Contáctenos",
   "Home": {
     "Ceramic": {
-      "title": "Revestimiento cerámico",
-      "subtitle": "Mantén la pintura de tu auto impecable y radiante"
+      "title": "Recubrimiento cerámico",
+      "subtitleGreen": "Tu auto como recien",
+      "subtitleWhite": "salido de la agencia."
     },
     "Detailing": {
-      "title": "DETALLE DEL COCHE",
-      "subtitle": "¡Mantén tu auto como nuevo! Refresca el interior de tu auto y haz brillar el exterior"
+      "title": "Detallado profesional en el area de la bahia",
+      "subtitleGreen": "Recupera el brillo de tu vehículo,",
+      "subtitleWhite": "haz que luzca como nuevo."
     },
     "Interior": {
-      "title": "INTERIOR DETALLADO",
-      "subtitle": "Renueva el interior de tu vehículo como un concesionario"
+      "title": "Derallado Interior",
+      "subtitleGreen": "Renueva el interior",
+      "subtitleWhite": "de tu vehiculo hasta el último detalle."
     }
   },
+  "About": {
+    "title": "Acerca de nosotros",
+    "subDescription": "Satisfacción garantizada",
+    "information": "Nuestro compromiso es su satisfacción primero. 100% garantizado.",
+    "description": "En Jacfran, nos especializamos en el detallado de vehículos, dedicados a proporcionar un servicio de máxima calidad para todos nuestros clientes. Con años de experiencia en la industria, nuestro apasionado equipo de profesionales se esfuerza por transformar cada vehículo, restaurando su brillo y protección originales. Nos enorgullecemos de utilizar productos premium y técnicas avanzadas para asegurar que cada coche no solo luzca inmaculado, sino que también esté protegido a largo plazo. Ofrecemos servicio móvil en el Área de la Bahía, sirviendo a la comunidad local con orgullo y excelencia."
+  },
+  "Gallery": {
+    "title": "El mejor servicio en la zona de la bahía",
+    "description": "Con nuestra protección de pintura premium, proteja el acabado de su vehículo contra los residuos de la carretera, los arañazos y los daños ambientales."
+  },
   "FrequentlyAsked": {
+    "title": "Preguntas frecuentes",
+    "description": "Pregunta",
     "CarDetailing": {
       "title": "Qué es el Detallado de Automóviles?",
       "description": "El detallado de automóviles es una limpieza, restauración y protección exhaustiva del interior y exterior de un vehículo. Va más allá de un lavado de autos regular al abordar cada detalle de tu coche para mejorar su apariencia y proteger sus superficies. Detallado Completo de Automóviles en la área de la bahia"
@@ -72,6 +91,8 @@
     }
   },
   "Reviews": {
+    "title": "Reseñas",
+    "description": "Que inspiran",
     "onePerson": {
       "name": "Emily R. from San Francisco",
       "description": "El servicio de detallado fue excepcional. Mi auto quedó como nuevo, tanto por dentro como por fuera. El equipo fue profesional y eficiente, y definitivamente regresaré para futuros servicios."
@@ -88,7 +109,7 @@
   "Packages": {
     "title": "Detalle completo",
     "subtitle": "Paquetes",
-    "selectModel": "Seleccione su modelo de automóvil",
+    "selectModel": "Seleccione su modelo",
     "details": "Detalle",
     "interior": "Interior",
     "exterior": "Exterior",
@@ -199,5 +220,180 @@
         ]
       }
     }
+  },
+  "Services": {
+    "title": "Servicios adicionales",
+    "description": "Si lo que desea es un servicio único para su vehículo, le ofrecemos una variedad de opciones para su elección.",
+    "engineWashandConditioning": {
+      "title": "Lavado de motor y acondicionamiento",
+      "descriptions": [
+        {
+          "title": "Lavado superficial con agua a presión y desengrasante (tp) 35min valor $80:",
+          "description": "Este método utiliza agua a alta presión combinada con productos desengrasantes específicos para eliminar la suciedad y el aceite superficial del motor. Ideal para un mantenimiento regular, este lavado ayuda a mantener el motor limpio y en buen estado de funcionamiento, previniendo la acumulación de residuos que pueden afectar su rendimiento. Acondicionamiento: Procedemos a lubricar todas las gomas y plasticos para una mejor apariencia y prolongación de vida útil.  ",
+          "conditioning": ""
+        },
+        {
+          "title": "Lavado intensivo con vapor desengrasante (Tp) 50 min valor $100:",
+          "description": " Utilizando vapor caliente y desengrasantes de alta eficacia, este lavado llega a las áreas más difíciles del motor, eliminando la grasa y suciedad acumulada. El uso de vapor garantiza una limpieza profunda sin dañar los componentes sensibles del motor, además de ser un método más ecológico que reduce el uso de químicos agresivos. Acondicionamiento: Procedemos a lubricar todas las gomas y plasticos para una mejor apariencia y prolongación de vida útil.",
+          "conditioning": ""
+        },
+        {
+          "title": "Lavado extremo con desengrasante y shampoo para la parte superior e inferior (Tp) 60min $120:",
+          "description": "Este proceso exhaustivo combina el uso de desengrasantes potentes y shampoo especializado para limpiar tanto la parte superior como inferior del motor. La limpieza incluye la eliminación de aceite, grasa, y otras contaminaciones en todas las áreas del motor, garantizando que todas las partes estén libres de residuos y funcionen de manera óptima. Esta limpieza es recomendada para el descarte de posibles liqueos.",
+          "conditioning": "Acondicionamiento: Procedemos a lubricar todas las gomas y plasticos para una mejor apariencia y prolongación de vida útil."
+        }
+      ]
+    },
+    "headlightRestoration": {
+      "title": "Restauración de faros",
+      "descriptions": [
+        {
+          "title": "Restauración con lijado y pulido (tp) 30 min valor $60:",
+          "description": "Esta técnica comienza con un proceso de lijado que elimina la capa opaca y amarillenta que se forma en los faros debido a la exposición al sol y otros elementos. Posteriormente, se realiza un pulido que devuelve la claridad y brillo original a los faros, mejorando tanto la apariencia del vehículo como la visibilidad durante la conducción nocturna."
+        },
+        {
+          "title": "Restauración con lijado, pulido y una capa de transparente (tp) 50min valor $100:",
+          "description": "Además del lijado y pulido, se aplica una capa de recubrimiento transparente que protege los faros de futuros daños. Este recubrimiento actúa como una barrera contra los rayos UV y otros elementos, manteniendo los faros claros y brillantes por más tiempo y reduciendo la necesidad de futuras restauraciones."
+        }
+      ]
+    },
+    "windowPolishing": {
+      "title": "Pulido de ventanas",
+      "descriptions": [
+        {
+          "title": "Pulido de ventanas (tp) 60min valor $100:",
+          "subTitle": "Un paso de pulido de corte para eliminar marcas de agua e imperfecciones:",
+          "description": "Este servicio se enfoca en eliminar las marcas de agua, manchas y pequeñas imperfecciones de las ventanas del vehículo mediante el uso de productos de pulido especializados. El proceso de pulido de corte remueve las capas superficiales dañadas del vidrio, devolviendo una apariencia clara y sin manchas, mejorando tanto la estética como la visibilidad."
+        }
+      ]
+    },
+    "odorRemoval": {
+      "title": "Eliminación de olores por ozono",
+      "descriptions": [
+        {
+          "title": "Eliminación de olores por ozono (tp) 35min valor $50:",
+          "description": "El proceso de eliminación de olores por ozono utiliza generadores de ozono para neutralizar y eliminar los olores desagradables del interior del vehículo. El ozono actúa sobre las moléculas de los olores, bacterias y hongos, descomponiéndolos y eliminándolos por completo. Este método es altamente efectivo y deja el interior del vehículo con un ambiente fresco y libre de malos olores. Este procedimiento ayuda a limpiar las vías respiratorias del vehículo."
+        }
+      ]
+    },
+    "interiorCleaning": {
+      "title": "Limpieza de interior con shampoo y vapor",
+      "descriptions": [
+        {
+          "title": "Limpieza de interior con shampoo y vapor (tp) 1hr 60min valor $100:",
+          "description": "Este servicio incluye una limpieza profunda de los asientos, el techo y las alfombras del vehículo utilizando una combinación de shampoo y vapor. El vapor desinfecta y elimina la suciedad incrustada en las superficies, mientras que el shampoo proporciona una limpieza profunda y deja una fragancia agradable. Este método es ideal para mantener el interior del vehículo limpio y libre de gérmenes y manchas, mejorando la comodidad y el ambiente para los ocupantes."
+        }
+      ]
+    },
+    "paintCorrection": {
+      "title": "Corrección de pintura",
+      "descriptions": [
+        {
+          "title": "Tres etapas de pulido: paso de corte, paso de refinado y paso de brillo:",
+          "description": "La corrección de pintura es un proceso detallado que mejora y restaura la apariencia del vehículo. El primer paso, el pulido de corte, elimina las imperfecciones más profundas y rasguños en la pintura. El segundo paso, el pulido de refinado, suaviza la superficie eliminando los micro arañazos restantes, ologramas y remolinos, logrando una suavidad más profunda en la pintura. Finalmente, el pulido de brillo obteniendo un brillo frofundo e intenso, dejando la pintura del vehículo en estado optimo."
+        }
+      ]
+    },
+    "ceramicCoating": {
+      "title": "Recubrimiento cerámico",
+      "descriptions": [
+        {
+          "title": "Introducción:",
+          "description": "No hay duda de que, con el tiempo, la pintura de tu coche puede empezar a verse un poco menos elegante que antes. Tu coche está expuesto a cosas como el sol, los insectos, la gasolina, el polvo y otros tipos de residuos cada vez que lo conduces, lo que significa que su pintura se va dañando lentamente. Qué fastidio, ¿verdad? Pero, ¿y si hubiera una forma de protegerla? ¡Por suerte para ti, la hay! @Jacfranservices ofrece un revestimiento cerámico para la pintura de su vehículo que puede ayudar a proteger y restaurar la pintura de su vehículo, para que brille como cuando lo sacó del concesionario. Te explicaremos algunos de los increíbles beneficios que puede tener el revestimiento cerámico para su vehículo. @Jacfranservices ofrece servicios profesionales de limpieza de autos en toda la área de la baia, que incluyen limpieza interior y exterior, lavados de autos de primera calidad, correcciones de pintura y revestimiento cerámico. "
+        },
+        {
+          "title": "Qué es el recubrimiento cerámico?",
+          "description": "El recubrimiento cerámico es un recubrimiento semipermanente o permanente (según el tipo) que se aplica al exterior de su vehículo para protegerlo contra daños externos a la pintura. Se trata de un tratamiento de pintura nanoscópico que se aplica en forma líquida, pero que se cura formando una capa dura sobre la pintura del vehículo. Normalmente está compuesto de dióxido de silicio (SiO2), que suele obtenerse de materiales naturales, como el cuarzo y la arena. Cuando los productos químicos se adhieren a la pintura del coche, crean un efecto hidrófobo (que repele el agua)."
+        },
+        {
+          "title": "5 beneficios de los recubrimientos cerámicos:",
+          "list": [
+            "Protege la pintura de daños externos y agentes contaminantes.",
+            "Al proveer una capa de alta resistencia, el recubrimiento cerámico ayuda a que las posteriores limpiezas se hagan de forma más rápida y sencilla.",
+            "El recubrimiento tiene mayor durabilidad que cualquier otro protectos de pintura que exista.",
+            "Mejora el costo-beneficio al requerir menos mantenimiento.",
+            "Tu auto lucirá como nuevo, el brillo y color de tu auto se hará notar."
+          ]
+        },
+        {
+          "title": "Protege tu pintura:",
+          "description": "Cada vez que conduce su automóvil, expone la pintura a diversos contaminantes que pueden causar daños. El revestimiento cerámico proporciona una superficie protectora resistente a la carrocería de su automóvil que evita que toda materia extraña cause daños a su vehículo. Puede soportar una cantidad significativa de daños sin mostrar efectos visibles en su automóvil, como decoloración, oxidación y manchas químicas. El revestimiento cerámico también puede proteger su automóvil de los dañinos rayos ultravioleta, que pueden provocar oxidación. Esto es especialmente útil si estaciona su automóvil en el exterior."
+        },
+        {
+          "title": "Mantiene tu auto más limpio:",
+          "description": "Gracias a la superficie dura que proporciona el revestimiento cerámico, la suciedad o los residuos simplemente se deslizan por la superficie, en lugar de quedarse atrapados en los pequeños huecos de la carrocería del vehículo. Esto significa que el coche se mantiene más limpio e incluso cuando necesita un lavado, quitar toda esa suciedad lleva mucho menos tiempo de lo que normalmente llevaría."
+        },
+        {
+          "title": "Dura más que otros métodos de protección de pintura:",
+          "description": "Los revestimientos de pintura tradicionales, como la cera, se desgastan mucho más rápido que los revestimientos cerámicos. Cuando elige un revestimiento cerámico de @ The Car Wash, puede esperar que dure años, sin desgastarse después de estar expuesto al clima, componentes de la atmósfera, excrementos de pájaros u otros posibles contaminantes."
+        },
+        {
+          "title": "Rentable:",
+          "description": "Una de las mejores ventajas del revestimiento cerámico es que es una opción muy rentable para los propietarios de vehículos. Si bien la inversión inicial puede ser un poco mayor, a largo plazo le costará menos porque no tendrá que gastar tanto dinero en cosas como cera, lavados de autos y otros servicios de limpieza exterior. Dependiendo del tipo de revestimiento cerámico que obtengas, es una solución esencialmente permanente, por lo que no tendrás que preocuparte por seguir reemplazándola año tras año."
+        },
+        {
+          "title": "Se ve genial:",
+          "description": "A quién no le gusta el aspecto brillante de un coche nuevo? Con el revestimiento cerámico, no solo se protege la superficie de su vehículo, sino que el revestimiento nuevo deja un hermoso brillo similar al de un caramelo que todos podrán admirar. Sacará lo mejor de su pintura original y le devolverá a su coche el aspecto que tenía cuando lo condujo por primera vez."
+        }
+      ]
+    },
+    "petHairRemoval": {
+      "title": "Eliminación de pelos de mascota",
+      "descriptions": [
+        {
+          "title": "Eliminación de pelos de mascota (Tp) 40min valor $55:",
+          "description": "Utilizando herramientas y técnicas especializadas, este servicio elimina eficazmente los pelos de mascotas del interior del vehículo. Se utilizan aspiradoras de alta potencia y cepillos especiales para remover los pelos adheridos a los asientos y alfombras, dejando el interior del vehículo limpio y más higiénico."
+        }
+      ]
+    },
+    "leatherConditioningHydration": {
+      "title": "Acondicionamiento e hidratación de cueros",
+      "descriptions": [
+        {
+          "title": "Acondicionamiento e hidratación de cueros (Tp) 35 min valor $60:",
+          "description": "Previamente se limpian todas las superficies utilizando productos especiales y avanzados para asi obtener una limpieza adecuada de los cueros del vehículo. Posteriormente procedemos a tratar con productos especializados que acondicionan e hidratan el cuero. Este proceso previene el desgaste, la decoloración y el agrietamiento del cuero, manteniendo su apariencia y textura suave y flexible. El acondicionamiento regular de los cueros prolonga su vida útil y mejora el confort y la estética del interior del vehículo."
+        }
+      ]
+    },
+    "plasticConditioning": {
+      "title": "Acondicionamiento, hidratación y protección de plásticos",
+      "descriptions": [
+        {
+          "title": "Acondicionamiento, hidratación y protección de plásticos (Tp) 40 min valor $60:",
+          "description": "Este servicio incluye la limpieza y tratamiento de las superficies de plástico del interior y exterior del vehículo. Se aplican productos que hidratan y protegen el plástico, previniendo el agrietamiento y la decoloración. Además, estos productos proporcionan una barrera protectora contra el polvo y la suciedad, manteniendo las superficies de plástico con un aspecto limpio y brillante por más tiempo."
+        }
+      ]
+    }
+  },
+  "Contact": {
+    "title": "Formulario de contacto",
+    "inputsName": {
+      "placeholder": "Nombre"
+    },
+    "inputsEmail": {
+      "placeholder": "Correo electrónico"
+    },
+    "inputsArea": {
+      "placeholder": "¿Cómo podemos ayudarle? ¡No dude en ponerse en contacto!"
+    },
+    "inputsCheck": {
+      "placeholder": "Acepto que mis datos son",
+      "borderText": "Recopilados y almacenados"
+    },
+    "contactUs": {
+      "title": "Contáctenos",
+      "questionTitle": "Tiene preguntas?",
+      "questionSubTitle": "Contáctanos!",
+      "description": "Servicio móvil área de la bahía, CA"
+    },
+    "button": {
+      "title": "Contáctanos"
+    },
+    "viewContact": {
+      "title": "¿no encontraste lo que buscabas?"
+    }
+  },
+  "Footer": {
+    "title": "Todos los derechos reservados."
   }
 }

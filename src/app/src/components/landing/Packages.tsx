@@ -39,9 +39,9 @@ export default function Packages(props: PackagesProps) {
   return (
     <section className="bg-bg">
       <div className="w-full pl-[175px] md:pl-[95px] sm:!pl-0">
-        <p className="uppercase md:p-0 md:pt-5 md:mb-5 text-primary text-[clamp(65px,7vw,180px)] font-neueRegular md:px-5">
+        <p className="uppercase md:p-0 md:pt-5 md:mb-5 text-primary text-[clamp(45px,7vw,180px)] font-neueRegular md:px-5">
           {t("Packages.title")}
-          <span className="text-bg-primary text-[clamp(34px,3vw,64px)] pl-2">
+          <span className="text-bg-primary text-[clamp(24px,3vw,64px)] pl-2">
             {t("Packages.subtitle")}
           </span>
         </p>
@@ -278,12 +278,12 @@ export default function Packages(props: PackagesProps) {
         <div className="w-full flex justify-center items-center h-[40%] md:py-[40px] py-10">
           <div className="flex w-[320px] h-[48px] border rounded-lg border-bg-primary bg-bg-secondary">
             <div className="w-full cursor-pointer flex items-center justify-center">
-              <p className="font-robotoBold text-x2l text-textColor-secondary">
+              <p className="font-robotoBold text-lg text-textColor-secondary">
                 {t("bookNow")}
               </p>
             </div>
             <div className="w-full cursor-pointer flex items-center justify-center border rounded-br-lg rounded-tr-lg border-bg bg-bg">
-              <p className="font-robotoBold text-x2l text-textColor-secondary">
+              <p className="font-robotoBold text-lg text-textColor-secondary">
                 {t("getAquote")}
               </p>
             </div>

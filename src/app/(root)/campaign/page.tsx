@@ -1,21 +1,18 @@
 "use client";
 
 import { Fragment, useEffect, useState, useCallback } from "react";
-import Image from "next/image";
-import Header from "../common/Header";
 import { Params } from "@/app/types/types";
-import AboutUs from "./AboutUs";
-import FrequentlyAsked from "./FrequentlyAsked";
-import Partners from "./Partner";
-import Reviews from "./Reviews";
-import Contact from "./Contact";
-import Footer from "./Footer";
-import Services from "./Services";
-import Packages from "./Packages";
-import Hero from "./Hero";
-import Gallery from "./Gallery";
-import WhatSapp from "@/app/src/assets/whatsapp.svg";
+import Image from "next/image";
+import Hero from "@/app/src/components/landing/Hero";
+import AboutUs from "@/app/src/components/landing/AboutUs";
+import Packages from "@/app/src/components/landing/Packages";
+import Gallery from "@/app/src/components/landing/Gallery";
+import Contact from "@/app/src/components/landing/Contact";
+import Footer from "@/app/src/components/landing/Footer";
+import Header from "@/app/src/components/common/Header";
 import Link from "next/link";
+import WhatSapp from "@/app/src/assets/whatsapp.svg";
+import ContactUs from "@/app/src/components/campaign/ContactUs";
 
 const SECTIONS = [
   {
@@ -25,17 +22,14 @@ const SECTIONS = [
   { id: "aboutus", component: AboutUs },
   { id: "packages", component: Packages },
   { id: "gallery", component: Gallery },
-  { id: "faq", component: FrequentlyAsked },
-  { id: "partners", component: Partners },
-  { id: "services", component: Services },
-  { id: "coverage", component: Reviews },
+  { id: "contact-us", component: ContactUs },
   { id: "contact", component: Contact },
   { id: "", component: Footer },
 ];
 
-export interface LandingProps extends Params {}
+export interface CampaignProps extends Params {}
 
-export default function Landing(props: LandingProps) {
+export default function Campaign(props: CampaignProps) {
   const { lng } = props;
   const [activeSection, setActiveSection] = useState("");
 

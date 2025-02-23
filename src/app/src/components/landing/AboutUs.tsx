@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Automobile from "@/app/src/assets/automobile.svg";
@@ -7,11 +8,20 @@ import Map from "@/app/src/assets/map.svg";
 import AboutLogo from "@/app/src/assets/about_logo.svg";
 import Button from "../common/Button";
 import { Params } from "@/app/types/types";
+import { useTranslation } from "react-i18next";
 
 export interface AboutUsProps extends Params {}
 
 export default function AboutUs(props: AboutUsProps) {
   const { lng } = props;
+  const { t, i18n } = useTranslation(lng);
+  const lngTransLation = i18n.language;
+  const [clientLng, setClientLng] = useState("en");
+
+  useEffect(() => {
+    setClientLng(lngTransLation);
+  }, [lngTransLation]);
+
   return (
     <>
       <Head>
@@ -48,12 +58,18 @@ export default function AboutUs(props: AboutUsProps) {
                   priority
                 />
               </div>
-              <h2
-                id="about-us-specialize-in-vehicle"
-                className="text-primary font-neueRegular text-[clamp(104px,15vw,204px)] font-normal uppercase leading-[60px] lg:text-[clamp(104px,25vw,204px)] sm:leading-[30px]"
-              >
-                About Us
-              </h2>
+              <div className="flex justify-center items-center w-full">
+                <h2
+                  id="about-us-specialize-in-vehicle"
+                  className={`text-primary font-neueRegular font-normal uppercase ${
+                    clientLng === "es"
+                      ? "text-[clamp(70px,15vw,95px)] leading-[3px] lg:text-[clamp(100px,3vw,130px)] sm:!text-[clamp(50px,3vw,60px)]"
+                      : "text-[clamp(104px,15vw,204px)] leading-[60px] lg:text-[clamp(104px,25vw,204px)] sm:leading-[30px]"
+                  }`}
+                >
+                  {t("About.title")}
+                </h2>
+              </div>
               <div className="w-full flex justify-center">
                 <Image
                   alt="Automobile detailing image"
@@ -73,21 +89,13 @@ export default function AboutUs(props: AboutUsProps) {
           <div className="absolute bg-bg-primary flex pt-[70px] justify-center w-[500px] lg:static lg:w-auto lg:p-[20px]">
             <div>
               <p className="text-textColor-primary text-justify text-md font-robotoBold">
-                At Jacfran, we specialize in vehicle detailing, dedicated to
-                providing top-quality service for all our clients. With years of
-                experience in the industry, our passionate team of professionals
-                strives to transform every vehicle, restoring its original shine
-                and protection. We pride ourselves on using premium products and
-                advanced techniques to ensure that every car not only looks
-                immaculate but is also protected for the long term. Mobile
-                service in Bay Area, we serve the local community with pride and
-                excellence.
+                {t("About.description")}
               </p>
               <h3 className="text-primary font-neueRegular text-[clamp(40px,5vw,54px)]">
-                Satisfaction Guaranteed
+                {t("About.subDescription")}
               </h3>
               <p className="text-textColor-primary text-md font-robotoBold sm:text-justify">
-                Our commitment is your satisfaction first. 100% Guaranteed.
+                {t("About.information")}
               </p>
               <div className="pt-5 flex items-center sm:flex-col-reverse">
                 <Button className="w-[204px]">Contact Us</Button>

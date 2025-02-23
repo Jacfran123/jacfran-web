@@ -8,20 +8,25 @@ import { useState } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { GALLERY } from "../../constants/mocks";
+import { useTranslation } from "react-i18next";
+import type { Params } from "@/app/types/types";
 
-export default function Gallery() {
+export interface GalleryProps extends Params {}
+
+export default function Gallery(props: GalleryProps) {
+  const { lng } = props;
+  const { t } = useTranslation(lng);
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <section className="w-full mx-auto overflow-hidden gallery-container bg-[#101115] pb-[120px] md:pb-16">
-      <div className="flex items-center justify-center pt-[80px]">
+      <div className="flex items-center justify-center pt-[80px] md:pt-16">
         <div className="w-[556px] text-center">
           <h2 className="font-neueRegular text-[clamp(34px,3vw,60px)] text-textColor-secondary">
-            The best service in bay area
+            {t("Gallery.title")}
           </h2>
           <p className="font-robotoBold text-textColor-secondary text-md">
-            Protect your vehicle’s finish from road debris, scratches, and
-            environmental damage with our premium Paint Protection
+            {t("Gallery.description")}
           </p>
         </div>
       </div>
@@ -42,15 +47,15 @@ export default function Gallery() {
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         breakpoints={{
           320: {
-            slidesPerView: 1,
+            slidesPerView: 1.2,
             spaceBetween: 10,
           },
           480: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+            slidesPerView: 1.2,
+            spaceBetween: 15,
           },
           768: {
-            slidesPerView: 2,
+            slidesPerView: 1.2,
             spaceBetween: 20,
           },
           1024: {
@@ -59,14 +64,14 @@ export default function Gallery() {
           },
           1366: {
             slidesPerView: 3,
-            spaceBetween: 50,
+            spaceBetween: 70,
           },
         }}
       >
         {GALLERY.map((item, index) => (
           <SwiperSlide key={`${index} - gallery`}>
             <div
-              className={`flex items-center justify-center text-4xl font-bold transition-transform duration-500 ease-in-out overflow-hidden ${
+              className={`flex items-center justify-center rounded-lg text-4xl font-bold transition-transform duration-500 ease-in-out overflow-hidden ${
                 activeIndex === index
                   ? "h-[460px] transform translate-y-[30px]"
                   : "h-[509px] transform translate-y-0"

@@ -46,19 +46,22 @@ export default function SwiperText(props: SwiperTextProps) {
           nextEl: ".hero-swiper-button-next",
         }}
       >
-        {HOME_TITLE.map(({ title, subtitle }, index) => (
-          <SwiperSlide key={`${title} - ${subtitle}`}>
+        {HOME_TITLE.map(({ title, subtitleGreen, subtitleWhite }, index) => (
+          <SwiperSlide key={`${title} - ${subtitleGreen}`}>
             <h1
               ref={(el) => (titleRefs.current[index] = el)}
-              className="text-[clamp(44px,7vw,110px)] leading-[clamp(46px,7vw,135px)] font-neueRegular uppercase text-textColor-secondary"
+              className="text-[clamp(44px,7vw,75px)] leading-[clamp(46px,7vw,70px)] font-neueRegular uppercase text-textColor-secondary opacity-0"
             >
               {t(title)}
             </h1>
             <h2
               ref={(el) => (subtitleRefs.current[index] = el)}
-              className="font-neueRegular text-textColor-secondary text-[clamp(12px,3vw,30px)]"
+              className="font-neueRegular text-bg-secondary text-[clamp(16px,3vw,30px)] opacity-0"
             >
-              {t(subtitle)}
+              {t(subtitleGreen)}{" "}
+              <span className="text-textColor-secondary">
+                {t(subtitleWhite)}
+              </span>
             </h2>
           </SwiperSlide>
         ))}
