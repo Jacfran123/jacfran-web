@@ -71,19 +71,25 @@ export default function Gallery(props: GalleryProps) {
         {GALLERY.map((item, index) => (
           <SwiperSlide key={`${index} - gallery`}>
             <div
-              className={`flex items-center justify-center rounded-lg text-4xl font-bold transition-transform duration-500 ease-in-out overflow-hidden ${
+              className={`flex flex-col items-center justify-center rounded-lg text-4xl font-bold transition-transform duration-500 ease-in-out overflow-hidden ${
                 activeIndex === index
                   ? "h-[460px] transform translate-y-[30px]"
                   : "h-[509px] transform translate-y-0"
               }`}
             >
-              <Image
-                className="object-cover"
-                src={item}
-                alt={`gallery - logo - ${index}`}
-                loading="lazy"
-                style={{ width: "100vw", height: "100%" }}
-              />
+              <div className="w-full h-full">
+                <Image
+                  className="object-cover w-full h-full rounded-lg"
+                  src={item.image}
+                  alt={`gallery - logo - ${index}`}
+                  loading="lazy"
+                />
+              </div>
+              <div className="w-full">
+                <p className="text-xl font-robotoBold text-textColor-secondary mt-4">
+                  {t(item.title)}
+                </p>
+              </div>
             </div>
           </SwiperSlide>
         ))}

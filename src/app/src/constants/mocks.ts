@@ -31,6 +31,10 @@ import Pintura from "@/app/src/assets/services/pintura.webp";
 import Plastico from "@/app/src/assets/services/plasticos.webp";
 import Recubrimiento from "@/app/src/assets/services/recubrimiento.webp";
 import Ventanas from "@/app/src/assets/services/ventanas.webp";
+//Testimonials
+import TestiMonialOne from "@/app/src/assets/testimonio-1.png";
+import TestiMonialTwo from "@/app/src/assets/testimonio-2.png";
+import TestiMonialThree from "@/app/src/assets/testimonio-3.png";
 
 type Logo = {
   image: any;
@@ -44,6 +48,8 @@ type RefItem = {
   quote: string;
   author: string;
   id: number;
+  image: any;
+  alt: string;
 };
 
 export const FREQUENTLYASKED = [
@@ -114,16 +120,22 @@ export const TESTIMONIALS: RefItem[] = [
     quote: "Reviews.onePerson.description",
     author: "Reviews.onePerson.name",
     id: 1,
+    image: TestiMonialOne,
+    alt: "Review Two",
   },
   {
     quote: "Reviews.twoPerson.description",
     author: "Reviews.twoPerson.name",
     id: 2,
+    image: TestiMonialTwo,
+    alt: "Review One",
   },
   {
     quote: "Reviews.threePerson.description",
     author: "Reviews.threePerson.name",
     id: 3,
+    image: TestiMonialThree,
+    alt: "Review Three",
   },
 ];
 
@@ -309,20 +321,20 @@ export const HOME_TITLE = [
 ];
 
 export const GALLERY = [
-  GalleryOne,
-  GalleryTwo,
-  GalleryThree,
-  GalleryFour,
-  GalleryFive,
-  GallerySix,
-  GallerySeven,
-  GalleryEight,
+  { title: "Gallery.headlight", image: GalleryOne },
+  { title: "Gallery.steam", image: GalleryTwo },
+  { title: "Gallery.professional", image: GalleryThree },
+  { title: "Gallery.rim", image: GalleryFour },
+  { title: "Gallery.polishing", image: GalleryFive },
+  { title: "Gallery.carnauba", image: GallerySix },
+  { title: "Gallery.deep", image: GallerySeven },
+  { title: "Gallery.leather", image: GalleryEight },
 ];
 
 export const FEATURES_SECTION = [
   {
     title: "Services.engineWashandConditioning.title",
-    logo: Cuero,
+    logo: Motor,
     descriptions: ["Services.engineWashandConditioning.descriptions"],
   },
   {
@@ -332,42 +344,42 @@ export const FEATURES_SECTION = [
   },
   {
     title: "Services.windowPolishing.title",
-    logo: Interior,
+    logo: Ventanas,
     descriptions: ["Services.windowPolishing.descriptions"],
   },
   {
     title: "Services.odorRemoval.title",
-    logo: Motor,
+    logo: Ozono,
     descriptions: ["Services.odorRemoval.descriptions"],
   },
   {
     title: "Services.interiorCleaning.title",
-    logo: Ozono,
+    logo: Interior,
     descriptions: ["Services.interiorCleaning.descriptions"],
   },
   {
     title: "Services.paintCorrection.title",
-    logo: Mascotas,
+    logo: Pintura,
     descriptions: ["Services.paintCorrection.descriptions"],
   },
   {
     title: "Services.ceramicCoating.title",
-    logo: Pintura,
+    logo: Recubrimiento,
     descriptions: ["Services.ceramicCoating.descriptions"],
   },
   {
     title: "Services.petHairRemoval.title",
-    logo: Plastico,
+    logo: Mascotas,
     descriptions: ["Services.petHairRemoval.descriptions"],
   },
   {
     title: "Services.leatherConditioningHydration.title",
-    logo: Recubrimiento,
+    logo: Cuero,
     descriptions: ["Services.leatherConditioningHydration.descriptions"],
   },
   {
     title: "Services.plasticConditioning.title",
-    logo: Ventanas,
+    logo: Plastico,
     descriptions: ["Services.plasticConditioning.descriptions"],
   },
 ];

@@ -4,7 +4,7 @@
   "services": "Services",
   "gallery": "Gallery",
   "coverage": "Coverage",
-  "getAquote": "Get a quote",
+  "getAquote": "Call Now",
   "bookNow": "Call Now",
   "viewMore": "View More",
   "packages": "packages",
@@ -34,7 +34,15 @@
   },
   "Gallery": {
     "title": "The best service in bay area",
-    "description": "Protect your vehicle’s finish from road debris, scratches, and environmental damage with our premium Paint Protection."
+    "description": "Protect your vehicle’s finish from road debris, scratches, and environmental damage with our premium Paint Protection.",
+    "headlight": "Headlight polishing",
+    "steam": "Steam cleaning",
+    "professional": "Professional detailed",
+    "rim": "Rim cleaning",
+    "polishing": "Polishing",
+    "carnauba": "Carnauba car wax",
+    "deep": "Deep interior cleaning",
+    "leather": "Leather restoration"
   },
   "FrequentlyAsked": {
     "title": "Frequently Asked",

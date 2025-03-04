@@ -4,7 +4,7 @@
   "services": "Servicios",
   "gallery": "Galeria",
   "coverage": "Coverage",
-  "getAquote": "Presupuesto",
+  "getAquote": "Llama ahora",
   "bookNow": "Llama ahora",
   "viewMore": "Ver más",
   "packages": "Paquetes",
@@ -34,7 +34,15 @@
   },
   "Gallery": {
     "title": "El mejor servicio en la zona de la bahía",
-    "description": "Con nuestra protección de pintura premium, proteja el acabado de su vehículo contra los residuos de la carretera, los arañazos y los daños ambientales."
+    "description": "Con nuestra protección de pintura premium, proteja el acabado de su vehículo contra los residuos de la carretera, los arañazos y los daños ambientales.",
+    "headlight": "Pulitura de faros",
+    "steam": "Limpieza a vapor",
+    "professional": "Detallado profesional",
+    "rim": "limpieza de rines",
+    "polishing": "Pulitura",
+    "carnauba": "Cera de carnauba para autos",
+    "deep": "limpieza profunda de interiores",
+    "leather": "Restauración de cueros"
   },
   "FrequentlyAsked": {
     "title": "Preguntas frecuentes",

@@ -11,12 +11,19 @@ import ReviewIcon from "@/app/src/assets/review_icon.svg";
 import "swiper/css";
 import "swiper/css/navigation";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 export interface ReviewsProps extends Params {}
 
 export default function Reviews(props: ReviewsProps) {
   const { lng } = props;
   const { t } = useTranslation(lng);
+
+  const [visibleIds, setVisibleIds] = useState<number>(0);
+
+  const handleSlideChange = (swiper: any) => {
+    setVisibleIds(swiper.realIndex + 1);
+  };
 
   return (
     <section
@@ -67,6 +74,8 @@ export default function Reviews(props: ReviewsProps) {
               }}
               className="w-full max-w-4xl mx-auto px-12"
               style={{ backgroundColor: "#050409" }}
+              onSlideChange={(swiper) => handleSlideChange(swiper)}
+              onSwiper={(swiper) => handleSlideChange(swiper)}
             >
               {TESTIMONIALS.map((testimonial) => (
                 <SwiperSlide
@@ -100,6 +109,26 @@ export default function Reviews(props: ReviewsProps) {
                   loading="lazy"
                 />
               </button>
+            </div>
+            <div className="flex justify-center items-center pt-10 md:pl-10">
+              {TESTIMONIALS.map((element) => {
+                return (
+                  <div
+                    key={element.id}
+                    className={`w-[100px] transition-transform duration-300 ${
+                      visibleIds === element.id ? "scale-125" : ""
+                    }`}
+                  >
+                    <Image
+                      src={element.image}
+                      alt={element.alt || ""}
+                      width={72}
+                      height={72}
+                      loading="lazy"
+                    />
+                  </div>
+                );
+              })}
             </div>
           </div>
           <style jsx>{`

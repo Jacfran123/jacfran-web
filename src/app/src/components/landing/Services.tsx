@@ -9,6 +9,7 @@ import { FEATURES_SECTION } from "../../constants/mocks";
 import { RefItem } from "../../constants/header";
 import { useTranslation } from "react-i18next";
 import Close from "@/app/src/assets/close.svg";
+import Link from "next/link";
 
 export interface ServicesProps extends Params {}
 
@@ -93,9 +94,11 @@ export default function Services(props: ServicesProps) {
                   <h3 className="text-x4l text-center font-neueRegular text-textColor-secondary max-w-[220px] leading-[43.2px]">
                     {t(item.title)}
                   </h3>
-                  <Button className="!w-auto px-5 bg-[#204B32] text-x2l mt-5 border border-white font-robotoBold hidden group-hover:block">
-                    {t("bookNow")}
-                  </Button>
+                  <Link href="tel:+1(510)330-9396" target="_blank">
+                    <Button className="!w-auto px-5 bg-[#204B32] text-x2l mt-5 border border-white font-robotoBold hidden group-hover:block">
+                      {t("bookNow")}
+                    </Button>
+                  </Link>
                 </div>
                 <p
                   onClick={() => openModal(item)}

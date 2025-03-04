@@ -120,20 +120,36 @@ export default function Header(props: HeaderProps) {
             onClick={handleLanguageChange}
             loading="lazy"
           />
-          <Button
-            className="border border-white font-robotoBold drop-shadow-drop-shadow-3xl 
+          <Link href="tel:+1(510)330-9396" target="_blank">
+            <Button
+              className="border border-white font-robotoBold drop-shadow-drop-shadow-3xl 
             border-border-button text-textColor-secondary rounded-lg p-[12px_20px] w-[170px] 
             uppercase font-bold text-sm bg-bg-secondary font-semiBold"
-            aria-label="Request a quote"
-          >
-            {t("getAquote")}
-          </Button>
+              aria-label="Request a quote"
+            >
+              {t("getAquote")}
+            </Button>
+          </Link>
         </div>
         <button className="hidden lg:block" onClick={handleClickMenu}>
           {isMenuOpen ? (
-            <Image src={Close} alt="Close icon" width={40} height={40} />
+            <div
+              className="w-10 h-10 bg-no-repeat bg-contain text-textColor-secondary"
+              style={{
+                backgroundImage: 'url("/images/close_white.svg")',
+              }}
+              role="img"
+              aria-label="Close icon"
+            />
           ) : (
-            <Image src={Menu} alt="Menu icon" width={40} height={40} />
+            <div
+              className="w-10 h-10 bg-no-repeat bg-contain text-textColor-secondary"
+              style={{
+                backgroundImage: 'url("/images/menu.svg")',
+              }}
+              role="img"
+              aria-label="Menu icon"
+            />
           )}
         </button>
       </div>
