@@ -9,6 +9,7 @@ import AboutLogo from "@/app/src/assets/about_logo.svg";
 import Button from "../common/Button";
 import { Params } from "@/app/types/types";
 import { useTranslation } from "react-i18next";
+import Link from "next/link";
 
 export interface AboutUsProps extends Params {}
 
@@ -61,11 +62,8 @@ export default function AboutUs(props: AboutUsProps) {
               <div className="flex justify-center items-center w-full">
                 <h2
                   id="about-us-specialize-in-vehicle"
-                  className={`text-primary font-neueRegular font-normal uppercase ${
-                    clientLng === "es"
-                      ? "text-[clamp(70px,15vw,95px)] leading-[3px] lg:text-[clamp(100px,3vw,130px)] sm:!text-[clamp(50px,3vw,60px)]"
-                      : "text-[clamp(104px,15vw,204px)] leading-[60px] lg:text-[clamp(104px,25vw,204px)] sm:leading-[30px]"
-                  }`}
+                  className={`text-primary font-neueRegular font-normal uppercase  text-[clamp(104px,15vw,204px)] leading-[60px] lg:text-[clamp(104px,25vw,204px)] sm:leading-[30px]
+                    `}
                 >
                   {t("About.title")}
                 </h2>
@@ -97,12 +95,18 @@ export default function AboutUs(props: AboutUsProps) {
               <p className="text-textColor-primary text-md font-robotoBold sm:text-justify">
                 {t("About.information")}
               </p>
-              <div className="pt-5 flex items-center sm:flex-col-reverse">
-                <Button className="w-[204px]">Contact Us</Button>
+              <Link
+                className="pt-5 flex items-center sm:flex-col-reverse"
+                href="tel:+1(510)330-9396"
+                target="_blank"
+              >
+                <Button className="w-[204px]">
+                  {t("Contact.contactUs.title")}
+                </Button>
                 <p className="text-x2l text-textColor-primary font-robotoBold pl-5 w-full sm:pb-3 sm:flex sm:justify-center sm:pl-0">
                   +1 (510) 330-9396
                 </p>
-              </div>
+              </Link>
             </div>
           </div>
 

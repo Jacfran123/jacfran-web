@@ -122,7 +122,7 @@ export default function Hero(props: HeroProps) {
         .hero-section .hero-swiper-button-prev,
         .hero-section .hero-swiper-button-next {
           position: absolute;
-          top: 50%;
+          top: 45%;
           width: 27px;
           height: 44px;
           margin-top: -22px;
@@ -132,6 +132,7 @@ export default function Hero(props: HeroProps) {
           align-items: center;
           justify-content: center;
           color: #fff;
+          left: 40%;
         }
 
         .hero-section .hero-swiper-button-prev {

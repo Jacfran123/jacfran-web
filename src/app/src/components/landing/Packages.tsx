@@ -13,6 +13,7 @@ import { Params } from "@/app/types/types";
 import ArrowRight from "@/app/src/assets/arrow_forward.svg";
 import ArrowLeft from "@/app/src/assets/arrow_back.svg";
 import { useTranslation } from "react-i18next";
+import Link from "next/link";
 
 export interface PackagesProps extends Params {}
 
@@ -276,7 +277,11 @@ export default function Packages(props: PackagesProps) {
           </div>
         </div>
         <div className="w-full flex justify-center items-center h-[40%] md:py-[40px] py-10">
-          <div className="flex w-[320px] h-[48px] border rounded-lg border-bg-primary bg-bg-secondary">
+          <Link
+            href="tel:+1(510)330-9396"
+            target="_blank"
+            className="flex w-[320px] h-[48px] border rounded-lg border-bg-primary bg-bg-secondary"
+          >
             <div className="w-full cursor-pointer flex items-center justify-center">
               <p className="font-robotoBold text-lg text-textColor-secondary">
                 {t("bookNow")}
@@ -287,7 +292,7 @@ export default function Packages(props: PackagesProps) {
                 {t("getAquote")}
               </p>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

@@ -91,7 +91,7 @@ export default function Header(props: HeaderProps) {
         </Link>
 
         <nav
-          className="flex items-center gap-10 font-semiBold lg:gap-10 lg:hidden"
+          className="flex items-center gap-5 font-semiBold lg:gap-10 lg:hidden"
           aria-label="Primary navigation"
         >
           {router.map((item) => (

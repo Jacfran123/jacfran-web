@@ -5,7 +5,7 @@
   "gallery": "Galeria",
   "coverage": "Coverage",
   "getAquote": "Presupuesto",
-  "bookNow": "Reservar ahora",
+  "bookNow": "Llama ahora",
   "viewMore": "Ver más",
   "packages": "Paquetes",
   "contactUs": "Contáctenos",
@@ -21,13 +21,13 @@
       "subtitleWhite": "haz que luzca como nuevo."
     },
     "Interior": {
-      "title": "Derallado Interior",
+      "title": "Detallado Interior",
       "subtitleGreen": "Renueva el interior",
       "subtitleWhite": "de tu vehiculo hasta el último detalle."
     }
   },
   "About": {
-    "title": "Acerca de nosotros",
+    "title": "Nosotros",
     "subDescription": "Satisfacción garantizada",
     "information": "Nuestro compromiso es su satisfacción primero. 100% garantizado.",
     "description": "En Jacfran, nos especializamos en el detallado de vehículos, dedicados a proporcionar un servicio de máxima calidad para todos nuestros clientes. Con años de experiencia en la industria, nuestro apasionado equipo de profesionales se esfuerza por transformar cada vehículo, restaurando su brillo y protección originales. Nos enorgullecemos de utilizar productos premium y técnicas avanzadas para asegurar que cada coche no solo luzca inmaculado, sino que también esté protegido a largo plazo. Ofrecemos servicio móvil en el Área de la Bahía, sirviendo a la comunidad local con orgullo y excelencia."
@@ -391,6 +391,13 @@
     },
     "viewContact": {
       "title": "¿no encontraste lo que buscabas?"
+    },
+    "errors": {
+      "agreement": "El campo es requerido",
+      "name": "El campo es requerido",
+      "emailInvalid": "Correo electrónico no válido",
+      "emailRequired": "El campo es requerido",
+      "message": "El campo es requerido"
     }
   },
   "Footer": {

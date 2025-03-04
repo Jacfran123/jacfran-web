@@ -49,7 +49,7 @@ export default {
         xl: { min: "1440px" },
         lg: { max: "1024px" },
         md: { max: "912px" },
-        sm: { max: "640px" },
+        sm: { max: "768px" },
         xs: { max: "480px" },
       },
       container: {

@@ -57,7 +57,7 @@ export default function Services(props: ServicesProps) {
           {t("Services.description")}
         </p>
 
-        <div className="grid grid-cols-4 pt-20 lg:grid-cols-2 md:!grid-cols-1 md:pt-14">
+        <div className="grid grid-cols-4 pt-20 lg:grid-cols-2 sm:!grid-cols-1 md:pt-14">
           {FEATURES_SECTION.map((item, index) => (
             <div
               key={index}

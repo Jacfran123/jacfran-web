@@ -79,9 +79,9 @@ export default function Campaign(props: CampaignProps) {
           <Component lng={lng} />
         </section>
       ))}
-      <div className="fixed bottom-5 right-5 z-10 p-4 cursor-pointer bg-bg-primary rounded-full">
+      <div className="fixed bottom-5 right-5 z-20 p-4 cursor-pointer bg-bg-primary rounded-full">
         <Link
-          href="https://wa.me/584122081361"
+          href="https://wa.me/+15103309396"
           target="_blank"
           rel="noopener noreferrer"
         >

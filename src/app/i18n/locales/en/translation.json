@@ -4,8 +4,8 @@
   "services": "Services",
   "gallery": "Gallery",
   "coverage": "Coverage",
-  "getAquote": "get a quote",
-  "bookNow": "Book Now",
+  "getAquote": "Get a quote",
+  "bookNow": "Call Now",
   "viewMore": "View More",
   "packages": "packages",
   "contactUs": "contact Us",
@@ -390,6 +390,13 @@
     },
     "viewContact": {
       "title": "Didn't find what you were looking for?"
+    },
+    "errors": {
+      "agreement": "The field is required",
+      "name": "The field is required",
+      "emailInvalid": "Email Invalid",
+      "emailRequired": "The field is required",
+      "message": "The field is required"
     }
   },
   "Footer": {

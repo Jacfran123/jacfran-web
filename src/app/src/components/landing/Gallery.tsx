@@ -39,7 +39,7 @@ export default function Gallery(props: GalleryProps) {
           nextEl: ".swiper-button-next",
         }}
         autoplay={{
-          delay: 3000,
+          delay: 1500,
           disableOnInteraction: false,
         }}
         loop
