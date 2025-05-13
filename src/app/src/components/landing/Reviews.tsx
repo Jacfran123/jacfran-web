@@ -83,7 +83,7 @@ export default function Reviews(props: ReviewsProps) {
                   data-id={testimonial.id}
                   className="bg-bg-accent"
                 >
-                  <div className="flex flex-col items-center text-center p-4 h-[256px] bg-bg-accent">
+                  <div className="flex flex-col items-center text-center p-4 h-[600px] bg-bg-accent">
                     <blockquote className="font-robotoBold text-[32px] text-textColor-secondary font-normal md:text-x2l">
                       "{t(testimonial.quote)}"
                     </blockquote>
@@ -119,13 +119,13 @@ export default function Reviews(props: ReviewsProps) {
                       visibleIds === element.id ? "scale-125" : ""
                     }`}
                   >
-                    <Image
+                    {/* <Image
                       src={element.image}
                       alt={element.alt || ""}
                       width={72}
                       height={72}
                       loading="lazy"
-                    />
+                    /> */}
                   </div>
                 );
               })}
@@ -144,7 +144,7 @@ export default function Reviews(props: ReviewsProps) {
 
             .swiper-button-next {
               right: -100px;
-              top: -170px;
+              top: -520px;
             }
 
             @media (max-width: 768px) {

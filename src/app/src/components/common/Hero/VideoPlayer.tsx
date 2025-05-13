@@ -10,9 +10,9 @@ export default function VideoPlayer() {
       playsInline
       preload="auto"
       aria-label="A promotional video showcasing car detailing services"
-      //poster="/images/packages_background.png"
+      poster="/images/image_video.jpg"
     >
-      <source src="/videos/auto.mp4" type="video/mp4" />
+      <source src="/videos/jacfran.mp4" type="video/mp4" />
       <track kind="captions" srcLang="en" label="English" default />
       Your browser does not support the video tag.
     </video>

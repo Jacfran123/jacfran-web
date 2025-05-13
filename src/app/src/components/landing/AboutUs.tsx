@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import Automobile from "@/app/src/assets/automobile.svg";
+import Automobile from "@/app/src/assets/about.jpg";
 import Map from "@/app/src/assets/map.svg";
 import AboutLogo from "@/app/src/assets/about_logo.svg";
 import Button from "../common/Button";
@@ -72,7 +72,7 @@ export default function AboutUs(props: AboutUsProps) {
                 <Image
                   alt="Automobile detailing image"
                   src={Automobile}
-                  className="w-[clamp(300px,70vw,535px)]"
+                  className="w-[clamp(300px,70vw,535px)] mt-16 rounded-[4px]"
                   sizes="100vw"
                   width={0}
                   height={0}
@@ -89,11 +89,14 @@ export default function AboutUs(props: AboutUsProps) {
               <p className="text-textColor-primary text-justify text-md font-robotoBold">
                 {t("About.description")}
               </p>
-              <h3 className="text-primary font-neueRegular text-[clamp(40px,5vw,54px)]">
+              <h3 className="text-primary font-neueRegular text-[clamp(40px,5vw,46px)]">
                 {t("About.subDescription")}
               </h3>
               <p className="text-textColor-primary text-md font-robotoBold sm:text-justify">
                 {t("About.information")}
+              </p>
+              <p className="text-textColor-primary text-md font-robotoBold pt-3 sm:text-justify">
+                {t("About.paintProtection")}
               </p>
               <Link
                 className="pt-5 flex items-center sm:flex-col-reverse"

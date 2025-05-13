@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: "Jacfran Vehicle Detailing Services",
     images: [
       {
-        url: "https://jacfranservices.com/images/jacfran.jpeg",
+        url: "https://jacfranservices.com/images/logo_seo.png",
         width: 1200,
         height: 630,
         alt: "Jacfran Professional Vehicle Detailing Services",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Premium Vehicle Detailing in Bay Area | Jacfran",
     description:
       "Professional mobile detailing services using premium products and advanced techniques for immaculate results and long-term protection.",
-    images: ["https://jacfranservices.com/images/jacfran.jpeg"],
+    images: ["https://jacfranservices.com/images/logo_seo.png"],
   },
   alternates: {
     canonical: "https://jacfranservices.com/",

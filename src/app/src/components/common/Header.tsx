@@ -7,7 +7,6 @@ import { cookieName } from "@/app/i18n/settings";
 import Button from "./Button";
 import JacFranLogo from "@/app/src/assets/logo_header.svg";
 import WorldLogo from "@/app/src/assets/world.svg";
-import Menu from "@/app/src/assets/menu.svg";
 import { useTranslation } from "@/app/i18n/client";
 import { Params } from "@/app/types/types";
 import { useCallback, useEffect, useState } from "react";
@@ -55,7 +54,7 @@ export default function Header(props: HeaderProps) {
       const navigationCampaign = [
         { id: "home", label: "home" },
         { id: "aboutus", label: "aboutUs" },
-        { id: "gallery", label: "gallery" },
+        //{ id: "gallery", label: "gallery" },
         { id: "packages", label: "packages" },
         { id: "contact", label: "contactUs" },
       ];
@@ -66,7 +65,7 @@ export default function Header(props: HeaderProps) {
         { id: "aboutus", label: "aboutUs" },
         { id: "packages", label: "packages" },
         { id: "services", label: "services" },
-        { id: "gallery", label: "gallery" },
+        //{ id: "gallery", label: "gallery" },
       ];
       setRouter(navigationLanding);
     }

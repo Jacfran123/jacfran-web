@@ -13,7 +13,7 @@ import Footer from "./Footer";
 import Services from "./Services";
 import Packages from "./Packages";
 import Hero from "./Hero";
-import Gallery from "./Gallery";
+//import Gallery from "./Gallery";
 import WhatSapp from "@/app/src/assets/whatsapp.svg";
 import Link from "next/link";
 
@@ -22,14 +22,14 @@ const SECTIONS = [
     id: "home",
     component: Hero,
   },
+  { id: "coverage", component: Reviews },
   { id: "aboutus", component: AboutUs },
   { id: "packages", component: Packages },
-  { id: "gallery", component: Gallery },
-  { id: "faq", component: FrequentlyAsked },
-  { id: "partners", component: Partners },
   { id: "services", component: Services },
-  { id: "coverage", component: Reviews },
+  { id: "partners", component: Partners },
   { id: "contact", component: Contact },
+  { id: "faq", component: FrequentlyAsked },
+  //{ id: "gallery", component: Gallery },
   { id: "", component: Footer },
 ];
 

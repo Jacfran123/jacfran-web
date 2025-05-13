@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import FacebookLogo from "@/app/src/assets/facebook.svg";
+import TiktokLogo from "@/app/src/assets/tiktok.svg";
 import InstagramLogo from "@/app/src/assets/instagram.svg";
 import PersonLogo from "@/app/src/assets/contact/person.svg";
 import EmailLogo from "@/app/src/assets/contact/mail.svg";
@@ -184,34 +185,45 @@ export default function Contact(props: ContactProps) {
               {t("Contact.contactUs.description")}
             </p>
             <div className="flex pt-5">
-              <div className="h-[48px] w-[48px] cursor-pointer rounded-lg border-[#959595] border flex items-center justify-center">
-                <Link
-                  href="https://www.facebook.com/jacfranservices"
-                  target="_blank"
-                >
-                  <Image
-                    alt="FacebookLogo Logo"
-                    src={FacebookLogo}
-                    width={12.46}
-                    height={24}
-                    priority
-                  />
-                </Link>
-              </div>
-              <div className="h-[48px] w-[48px] cursor-pointer rounded-lg border-[#959595] border flex items-center justify-center ml-5">
-                <Link
-                  href="https://www.instagram.com/jacfranservices"
-                  target="_blank"
-                >
-                  <Image
-                    alt="InstagramLogo Logo"
-                    src={InstagramLogo}
-                    width={24}
-                    height={24}
-                    priority
-                  />
-                </Link>
-              </div>
+              <Link
+                className="h-[48px] w-[48px] cursor-pointer rounded-lg border-[#959595] border flex items-center justify-center"
+                href="https://www.facebook.com/jacfranservices"
+                target="_blank"
+              >
+                <Image
+                  alt="FacebookLogo Logo"
+                  src={FacebookLogo}
+                  width={12.46}
+                  height={24}
+                  priority
+                />
+              </Link>
+              <Link
+                className="h-[48px] w-[48px] cursor-pointer rounded-lg border-[#959595] border flex items-center justify-center ml-5"
+                href="https://www.instagram.com/jacfranservices"
+                target="_blank"
+              >
+                <Image
+                  alt="InstagramLogo Logo"
+                  src={InstagramLogo}
+                  width={24}
+                  height={24}
+                  priority
+                />
+              </Link>
+              <Link
+                className="h-[48px] w-[48px] cursor-pointer rounded-lg border-[#959595] border flex items-center justify-center ml-5"
+                href="https://www.tiktok.com/@jacfranservices?_t=ZT-8wKZAONdeos&_r=1"
+                target="_blank"
+              >
+                <Image
+                  alt="TiktokLogo Logo"
+                  src={TiktokLogo}
+                  width={24}
+                  height={24}
+                  priority
+                />
+              </Link>
             </div>
           </div>
         </div>

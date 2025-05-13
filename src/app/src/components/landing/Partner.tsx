@@ -11,7 +11,7 @@ export interface PartnersProps extends Params {}
 
 export default function Partners(props: PartnersProps) {
   return (
-    <div className="h-[109px] w-full bg-[#1EA356] mt-20 lg:mt-4 flex items-center justify-center">
+    <div className="h-[109px] w-full bg-[#1EA356] lg:mt-4 flex items-center justify-center">
       <Swiper
         modules={[Autoplay]}
         spaceBetween={30}

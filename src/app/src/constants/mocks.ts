@@ -48,7 +48,7 @@ type RefItem = {
   quote: string;
   author: string;
   id: number;
-  image: any;
+  //image: any;
   alt: string;
 };
 
@@ -120,22 +120,25 @@ export const TESTIMONIALS: RefItem[] = [
     quote: "Reviews.onePerson.description",
     author: "Reviews.onePerson.name",
     id: 1,
-    image: TestiMonialOne,
     alt: "Review Two",
   },
   {
     quote: "Reviews.twoPerson.description",
     author: "Reviews.twoPerson.name",
     id: 2,
-    image: TestiMonialTwo,
     alt: "Review One",
   },
   {
     quote: "Reviews.threePerson.description",
     author: "Reviews.threePerson.name",
     id: 3,
-    image: TestiMonialThree,
     alt: "Review Three",
+  },
+  {
+    quote: "Reviews.fourPerson.description",
+    author: "Reviews.fourPerson.name",
+    id: 4,
+    alt: "Review Four",
   },
 ];
 
@@ -170,7 +173,7 @@ export interface Car {
 export const CARS = [
   {
     image: Sedan,
-    type: "SEDAN",
+    type: "Sedan",
     packages: [
       {
         name: "Basic",
@@ -212,7 +215,7 @@ export const CARS = [
   },
   {
     image: Suv,
-    type: "SUV",
+    type: "Suv",
     packages: [
       {
         name: "Basic",
@@ -257,7 +260,7 @@ export const CARS = [
   },
   {
     image: Truck,
-    type: "VAN",
+    type: "Trucks",
     packages: [
       {
         name: "Basic",

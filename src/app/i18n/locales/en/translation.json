@@ -28,9 +28,10 @@
   },
   "About": {
     "title": "About Us",
-    "subDescription": "Satisfaction Guaranteed",
-    "information": "Our commitment is your satisfaction first. 100% Guaranteed.",
-    "description": "At Jacfran, we specialize in vehicle detailing, dedicated to providing top-quality service for all our clients. With years of experience in the industry, our passionate team of professionals strives to transform every vehicle, restoring its original shine and protection. We pride ourselves on using premium products and advanced techniques to ensure that every car not only looks immaculate but is also protected for the long term. Mobile service in Bay Area, we serve the local community with pride and excellence."
+    "subDescription": "The best service in the Bay Area!",
+    "paintProtection": "Shield your vehicle’s paint from road debris, scratches, and environmental elements with our premium Paint Protection.",
+    "information": "Your satisfaction is our top priority. 100% Guaranteed!",
+    "description": "At Jacfran, our specialty is vehicle detailing. We are committed to providing exceptional service to all our customers. Our team of experienced professionals is dedicated to transforming each vehicle, taking into account every little detail, restoring its original shine and prestige. Our company uses only the highest quality products and cutting-edge techniques to ensure that each vehicle is finished to the highest standard and protected against the elements for the long term. We offer a mobile service located in the Bay Area, committing ourselves to each car and giving our best to ensure that the result is up to our customer's standards."
   },
   "Gallery": {
     "title": "The best service in bay area",
@@ -49,69 +50,73 @@
     "description": "Question",
     "CarDetailing": {
       "title": "What is Car Detailing? ",
-      "description": "Car detailing is a thorough cleaning, restoration, and protection of a vehicle’s interior and exterior. It goes beyond a regular car wash by addressing every detail of your car to enhance its appearance and protect its surfaces. Full Car Detail in bay area."
+      "description": "Car detailing is a high-quality service that involves the meticulous cleaning, restoration, and protection of your vehicle's interior and exterior. In contrast to the typical car wash experience, detailing takes a meticulous approach, ensuring that every aspect of your vehicle is attended to. This process enhances its appearance while protecting the surfaces from potential damage. A full car detail is the most effective way to ensure your vehicle looks and feels like new. such as removing dirt from hard-to-reach areas, restoring the paint's shine, and also applying protective coatings. Receive our premium car detailing service in the Bay Area today!"
     },
     "CarCleaning": {
       "title": "What’s the Difference Between Car Cleaning and Car Detailing?",
-      "description": "A car wash or car cleaning typically focuses on removing surface-level dirt from the exterior and sometimes the interior. Car detailing is a more comprehensive service, including deep cleaning, paint correction, waxing, polishing, and interior conditioning to maintain and protect your vehicle. Mobile Interior Car Cleaning."
+      "description": "A 'car wash' or 'regular car cleaning' service generally focuses on the removal of surface-level dirt from the vehicle's exterior, and occasionally, the interior. Car detailing is a more exhaustive service that includes deep cleaning, paint correction, waxing, polishing, and interior conditioning to maintain and protect your vehicle."
     },
     "IGetMyCarDetailed": {
       "title": "How Often Should I Get My Car Detailed?",
-      "description": "The frequency depends on how often you drive, environmental conditions, and personal. preferences. On average, we recommend detailing your car every 3-6 months to maintain its appearance and value."
+      "description": "The frequency is determined by several factors, including the frequency of driving, environmental conditions, and individual preferences. To maintain the appearance and value of your vehicle, we recommend scheduling a detailing service every three to six months. The frequency is determined by several factors, including the frequency of driving, environmental conditions, and personal preferences. To maintain the appearance and value of your vehicle, we recommend scheduling a detailing service every three to six months."
     },
     "BenefitsOfCarDetailing": {
       "title": "What Are The Benefits Of Car Detailing?",
-      "description": "Car detailing helps:",
+      "description": "Car detailing benefits:",
       "points": {
-        "one": "Protect the paint and interior from damage.",
-        "two": "Maintain or increase your car’s resale value.",
-        "three": "Improve your driving experience with a fresh and clean vehicle.",
-        "four": "Enhance your car’s overall appearance."
+        "one": "Protection against paint and interior damage.",
+        "two": "Maintain and even increase your car's resale value.",
+        "three": "Enhance your driving experience with a well-maintained vehicle.",
+        "four": "Improve the overall appearance of your vehicle."
       }
     },
     "FullCarDetail": {
       "title": "What is included in a full car detail?",
-      "description": "A full car detail (Exterior Detail and Interior Detail) typically includes:",
+      "description": "A full car detail (exterior and interior cleaning) includes:",
       "points": {
-        "one": "Exterior Services: Washing, waxing, polishing, clay bar treatment, and paint protection.",
+        "one": "Exterior Services: washing, waxing, polishing, clay bar treatment, and paint protection.",
         "two": "Interior Services: Deep cleaning of carpets, seats, and upholstery, dashboard and panel treatment, and odor removal."
       }
     },
     "DetailingCost": {
       "title": "How much does car detailing cost?",
-      "description": "The cost depends on the level of service, your car’s size, and any additional treatments like ceramic coating or paint correction. View our Packages or Contact us for a personalized quote."
+      "description": "The cost depends on the level of service, the size of your car, and any additional treatments like ceramic coating or paint correction. Please take a moment to view our range of services or contact us to discuss a customized quote."
     },
     "WillDetailingProtect": {
       "title": "Will detailing protect my car's paint?",
-      "description": "Yes! Waxing, sealants, or ceramic coatings applied during detailing act as protective layers, safeguarding your paint from UV rays, dirt, and contaminants."
+      "description": "Absolutely! Waxing, sealants, or ceramic coatings applied during detailing act as protective layers, safeguarding paint from UV rays, dirt, and contaminants."
     },
     "MobileCarDetailing": {
       "title": "How is mobile car detailing different from regular detailing services?",
-      "description": "Mobile car detailing services bring professional auto detailing directly to your location. This convenience is ideal for those searching for “car detailing near me” or “mobile detailing near me.” Our services cover mobile interior car detailing, mobile exterior car detailing, and more in areas like Bay Area."
+      "description": "Mobile car detailing services deliver professional auto detailing directly to your location. This feature is ideal for individuals searching for 'car detailing near me' or 'mobile detailing near me.' Our diverse services includes mobile interior and exterior detailing for all of our clients in the Bay Area and beyond."
     },
     "OfferSameDayCar": {
       "title": "Do you offer same-day car detailing services?",
-      "description": "Yes, same-day services are available based on our schedule. Contact us early for availability in Bay Area."
+      "description": "Yes, same-day services are available based on our schedule. To ensure availability in the Bay Area, please contact us well in advance."
     },
     "CanAutoDetailingRemove": {
       "title": "Can auto detailing remove scratches or stains?",
-      "description": "Yes, professional auto detailing can address minor scratches and stains. Services like paint correction and interior shampooing are designed to restore your vehicle’s surfaces."
+      "description": "Yes! Professional car detailing services are able to address minor scratches and stains effectively. Services such as paint correction and interior shampooing are designed to restore your vehicle's surfaces."
     }
   },
   "Reviews": {
     "title": "Reviews",
     "description": "That Inspire",
     "onePerson": {
-      "name": "Emily R. from San Francisco",
-      "description": "The detailing service was exceptional. My car looks brand new inside and out. The team was professional and efficient, and I will definitely be coming back for future services."
+      "name": "LUIS DANIEL CHACON",
+      "description": "I recently had my car detailed with polishing, restoration, and a deep cleaning, and I couldn’t be more impressed with the results. The team was professional, punctual, and paid incredible attention to detail. My car looks brand new — the paint is shiny and smooth, the interior is spotless, and even the smallest imperfections were taken care of. The quality of the service exceeded my expectations, and I would highly recommend them to anyone looking to give their car a fresh, clean look. Outstanding work."
     },
     "twoPerson": {
-      "name": "Mike S. from Oakland",
-      "description": "I couldn't be happier with the detailing I received. The team did an amazing job removing every stain and leaving my car sparkling clean. Highly recommended!"
+      "name": "DANGELLO CAMPOS BLANCHARD",
+      "description": "Excellent service I RECOMMEND it , they excel in every area with great care and dedication, they also have all their tools for professional use, leaving an exceptional finish, taking care of the paint in detail... giving it life and an INCREDIBLE shine in all areas of my car."
     },
     "threePerson": {
-      "name": "Laura P. from San Jose",
-      "description": "I was impressed with the attention to detail and dedication of the team. From headlight restoration to interior cleaning, everything was impeccable. Definitely worth it!"
+      "name": "LINETT MARCHENA",
+      "description": "The service was amazing, it surpassed my expectations! My car looks brilliant and clean. Highly recommended!"
+    },
+    "fourPerson": {
+      "name": "JESUS RODRIGUEZ",
+      "description": "Outstanding service, my car is absolutely immaculate! Highly recommended."
     }
   },
   "Packages": {
@@ -230,7 +235,7 @@
   },
   "Services": {
     "title": "ADDITIONAL SERVICES",
-    "description": "If what you want is a unique service for your vehicle, we offer you a variety of options for your choice.",
+    "description": "If you are seeking a unique and premium service for your vehicle, we offer a variety of options for your choice.",
     "engineWashandConditioning": {
       "title": "Engine Wash and Conditioning",
       "descriptions": [
@@ -304,6 +309,14 @@
     "ceramicCoating": {
       "title": "Ceramic Coating",
       "descriptions": [
+        {
+          "title": "Ceramic Coating (tp) 8 hours values:",
+          "list": ["Sedan 999$", "Suv 1.199$", "Trucks 1.299$"]
+        },
+        {
+          "title": "Introduction:",
+          "description": "There is no doubt that, over time, your car's paint can start to look a little less sleek than before. Your car is exposed to things like the sun, bugs, gasoline, dust, and other types of residues every time you drive it, which means its paint is slowly getting damaged. What a hassle, right? But what if there was a way to protect it? Luckily for you, there is! @Jacfranservices offers a ceramic coating for your vehicle's paint that can help protect and restore your vehicle's paint, so it shines like when you drove it off the lot. We'll explain some of the incredible benefits that ceramic coating can have for your vehicle. @Jacfranservices offers professional car cleaning services throughout the Bay Area, including interior and exterior cleaning, premium car washes, paint corrections, and ceramic coating."
+        },
         {
           "title": "Introduction:",
           "description": "There is no doubt that, over time, your car's paint can start to look a little less sleek than before. Your car is exposed to things like the sun, bugs, gasoline, dust, and other types of residues every time you drive it, which means its paint is slowly getting damaged. What a hassle, right? But what if there was a way to protect it? Luckily for you, there is! @Jacfranservices offers a ceramic coating for your vehicle's paint that can help protect and restore your vehicle's paint, so it shines like when you drove it off the lot. We'll explain some of the incredible benefits that ceramic coating can have for your vehicle. @Jacfranservices offers professional car cleaning services throughout the Bay Area, including interior and exterior cleaning, premium car washes, paint corrections, and ceramic coating."

@@ -6,7 +6,7 @@ import Image from "next/image";
 import Hero from "@/app/src/components/landing/Hero";
 import AboutUs from "@/app/src/components/landing/AboutUs";
 import Packages from "@/app/src/components/landing/Packages";
-import Gallery from "@/app/src/components/landing/Gallery";
+//import Gallery from "@/app/src/components/landing/Gallery";
 import Contact from "@/app/src/components/landing/Contact";
 import Footer from "@/app/src/components/landing/Footer";
 import Header from "@/app/src/components/common/Header";
@@ -21,7 +21,7 @@ const SECTIONS = [
   },
   { id: "aboutus", component: AboutUs },
   { id: "packages", component: Packages },
-  { id: "gallery", component: Gallery },
+  //{ id: "gallery", component: Gallery },
   { id: "contact-us", component: ContactUs },
   { id: "contact", component: Contact },
   { id: "", component: Footer },
