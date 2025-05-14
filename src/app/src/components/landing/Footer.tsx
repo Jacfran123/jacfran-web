@@ -15,7 +15,7 @@ export default function Footer(props: FooterProps) {
       aria-label="Footer Section"
     >
       <p className="font-robotoBold text-center text-textColor-secondary text-x2l md:text-md">
-        jacfranservices © {new Date().getFullYear()}. {t("Footer.title")}
+        jacfranservices © 2025. {t("Footer.title")}
       </p>
     </footer>
   );
