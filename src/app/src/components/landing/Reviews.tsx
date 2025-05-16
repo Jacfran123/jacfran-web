@@ -27,7 +27,7 @@ export default function Reviews(props: ReviewsProps) {
 
   return (
     <section
-      className="bg-bg-accent py-20 flex justify-center overflow-hidden"
+      className="bg-bg-accent py-20 flex justify-center overflow-hidden md:pb-5"
       aria-labelledby="reviews-title"
     >
       <div className="w-full max-w-screen-lg mx-auto relative">
@@ -40,11 +40,11 @@ export default function Reviews(props: ReviewsProps) {
         <p className="text-md font-robotoBold text-textColor-secondary uppercase text-center">
           {t("Reviews.description")}
         </p>
-        <div className="w-full flex justify-center pt-10">
+        <div className="w-full flex justify-center pt-10 md:pt-0">
           <Image src={ReviewIcon} alt={"Reviews Icons"} />
         </div>
         <div className="pt-10 md:pt-8 w-full flex items-center justify-center">
-          <div className="w-[753px] md:w-full bg-bg-accent">
+          <div className="w-[753px] bg-bg-accent md:w-full">
             <div className="w-full relative">
               <button
                 className="swiper-button-prev"
@@ -83,7 +83,7 @@ export default function Reviews(props: ReviewsProps) {
                   data-id={testimonial.id}
                   className="bg-bg-accent"
                 >
-                  <div className="flex flex-col items-center text-center p-4 h-[600px] bg-bg-accent">
+                  <div className="flex flex-col items-center text-center p-4 h-[600px] bg-bg-accent md:h-[650px]">
                     <blockquote className="font-robotoBold text-[32px] text-textColor-secondary font-normal md:text-x2l">
                       "{t(testimonial.quote)}"
                     </blockquote>

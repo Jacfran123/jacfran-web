@@ -1,5 +1,6 @@
 "use client";
 
+import type React from "react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import IconCheck from "@/app/src/assets/icon_check.svg";
-import { Car, CARS, Package } from "../../constants/mocks";
+import { CARS, Package } from "../../constants/mocks";
 import { Navigation, Pagination } from "swiper/modules";
 import { Params } from "@/app/types/types";
 import ArrowRight from "@/app/src/assets/arrow_forward.svg";
@@ -91,15 +92,17 @@ export default function Packages(props: PackagesProps) {
                       prevEl: ".swiper-button-prev",
                       nextEl: ".swiper-button-next",
                     }}
-                    style={{
-                      "--swiper-pagination-color": "#1c9950",
-                      "--swiper-pagination-bullet-inactive-color": "#9C9C9C",
-                      "--swiper-pagination-bullet-inactive-opacity": "1",
-                      "--swiper-pagination-bullet-size": "7px",
-                      "--swiper-pagination-bullet-horizontal-gap": "6px",
-                      "--swiper-pagination-bottom": "60px",
-                      "--swiper-pagination-position": "relative",
-                    }}
+                    style={
+                      {
+                        "--swiper-pagination-color": "#1c9950",
+                        "--swiper-pagination-bullet-inactive-color": "#9C9C9C",
+                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                        "--swiper-pagination-bullet-size": "7px",
+                        "--swiper-pagination-bullet-horizontal-gap": "6px",
+                        "--swiper-pagination-bottom": "60px",
+                        "--swiper-pagination-position": "relative",
+                      } as React.CSSProperties
+                    }
                   >
                     {CARS.map((car, index) => (
                       <SwiperSlide

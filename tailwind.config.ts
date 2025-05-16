@@ -81,7 +81,7 @@ export default {
         ".list-circle li::before": {
           content: '"• "',
           position: "absolute",
-          left: 0,
+          left: "0",
         },
       });
     }),

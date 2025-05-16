@@ -8,8 +8,12 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Params } from "@/app/types/types";
 
-const MyLazyVideoPlayer = dynamic(() => import("../common/Hero/VideoPlayer"));
-const MyLazySwiperText = dynamic(() => import("../common/Hero/SwiperText"));
+const MyLazyVideoPlayer = dynamic(() => import("../common/Hero/VideoPlayer"), {
+  ssr: false,
+});
+const MyLazySwiperText = dynamic(() => import("../common/Hero/SwiperText"), {
+  ssr: false,
+});
 
 export interface HeroProps extends Params {}
 

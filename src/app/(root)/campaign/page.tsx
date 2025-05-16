@@ -1,7 +1,6 @@
 "use client";
 
 import { Fragment, useEffect, useState, useCallback } from "react";
-import { Params } from "@/app/types/types";
 import Image from "next/image";
 import Hero from "@/app/src/components/landing/Hero";
 import AboutUs from "@/app/src/components/landing/AboutUs";
@@ -13,6 +12,8 @@ import Header from "@/app/src/components/common/Header";
 import Link from "next/link";
 import WhatSapp from "@/app/src/assets/whatsapp.svg";
 import ContactUs from "@/app/src/components/campaign/ContactUs";
+import { useCookies } from "react-cookie";
+import { cookieName } from "@/app/i18n/settings";
 
 const SECTIONS = [
   {
@@ -27,10 +28,9 @@ const SECTIONS = [
   { id: "", component: Footer },
 ];
 
-export interface CampaignProps extends Params {}
+export default function Campaign() {
+  const [cookies] = useCookies([cookieName]);
 
-export default function Campaign(props: CampaignProps) {
-  const { lng } = props;
   const [activeSection, setActiveSection] = useState("");
 
   const scrollToSection = useCallback((sectionId: string) => {
@@ -66,7 +66,7 @@ export default function Campaign(props: CampaignProps) {
   return (
     <Fragment>
       <Header
-        lng={lng}
+        lng={cookies.i18next}
         activeSection={activeSection}
         onSectionClick={scrollToSection}
       />
@@ -76,7 +76,7 @@ export default function Campaign(props: CampaignProps) {
           id={id}
           className="scroll-mt-[100px] md:scroll-mt-[70px]"
         >
-          <Component lng={lng} />
+          <Component lng={cookies.i18next} />
         </section>
       ))}
       <div className="fixed bottom-5 right-5 z-20 p-4 cursor-pointer bg-bg-primary rounded-full">

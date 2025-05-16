@@ -177,7 +177,7 @@ export const CARS = [
     packages: [
       {
         name: "Basic",
-        duration: "2 hr apro",
+        duration: "2hr aprox",
         bg: "bg-[#DFDFDF]",
         amount: 255,
         includesPlans: {
@@ -189,7 +189,7 @@ export const CARS = [
       },
       {
         name: "Gold",
-        duration: "3 hr apro",
+        duration: "3hr aprox",
         bg: "bg-[#BBBBBB]",
         amount: 382,
         includesPlans: {
@@ -201,7 +201,7 @@ export const CARS = [
       },
       {
         name: "Diamond",
-        duration: "2 hr apro",
+        duration: "6hr aprox",
         bg: "bg-[#959595]",
         amount: 1274,
         includesPlans: {
@@ -219,7 +219,7 @@ export const CARS = [
     packages: [
       {
         name: "Basic",
-        duration: "2 hr apro",
+        duration: "2hr aprox",
         bg: "bg-[#DFDFDF]",
         details: [],
         amount: 311,
@@ -232,7 +232,7 @@ export const CARS = [
       },
       {
         name: "Gold",
-        duration: "3 hr apro",
+        duration: "3hr aprox",
         bg: "bg-[#BBBBBB]",
         details: [],
         amount: 399,
@@ -245,7 +245,7 @@ export const CARS = [
       },
       {
         name: "Diamond",
-        duration: "2 hr apro",
+        duration: "6hr aprox",
         bg: "bg-[#959595]",
         details: [],
         amount: 1486,
@@ -264,7 +264,7 @@ export const CARS = [
     packages: [
       {
         name: "Basic",
-        duration: "2 hr apro",
+        duration: "2hr aprox",
         bg: "bg-[#DFDFDF]",
         details: [],
         amount: 365,
@@ -277,7 +277,7 @@ export const CARS = [
       },
       {
         name: "Gold",
-        duration: "3 hr apro",
+        duration: "3hr aprox",
         bg: "bg-[#BBBBBB]",
         details: [],
         amount: 425,
@@ -290,7 +290,7 @@ export const CARS = [
       },
       {
         name: "Diamond",
-        duration: "2 hr apro",
+        duration: "6hr aprox",
         bg: "bg-[#959595]",
         details: [],
         amount: 1656,

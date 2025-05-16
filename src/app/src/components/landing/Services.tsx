@@ -4,14 +4,20 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
 import Button from "../common/Button";
-import { Params } from "@/app/types/types";
+import type { Params } from "@/app/types/types";
 import { FEATURES_SECTION } from "../../constants/mocks";
-import { RefItem } from "../../constants/header";
+import type { RefItem } from "../../constants/header";
 import { useTranslation } from "react-i18next";
 import Close from "@/app/src/assets/close.svg";
 import Link from "next/link";
 
 export interface ServicesProps extends Params {}
+
+interface Description {
+  title: string;
+  description?: string;
+  list?: string[];
+}
 
 export default function Services(props: ServicesProps) {
   const { lng } = props;
@@ -48,6 +54,14 @@ export default function Services(props: ServicesProps) {
     setSelectedItem(null);
   };
 
+  // Obtener las descripciones y asegurarse de que sea un array
+  const getDescriptions = (): Description[] => {
+    if (!selectedItem?.descriptions) return [];
+
+    const result = t(selectedItem.descriptions, { returnObjects: true });
+    return Array.isArray(result) ? result : [];
+  };
+
   return (
     <section className="w-full flex justify-center py-20 bg-bg-accent md:py-10">
       <div>
@@ -75,6 +89,7 @@ export default function Services(props: ServicesProps) {
                   } else {
                     refs.current[index].container = el;
                   }
+                  return undefined;
                 }}
                 src={item.logo || "/placeholder.svg"}
                 alt={`${item.title} - Logo`}
@@ -89,6 +104,7 @@ export default function Services(props: ServicesProps) {
                       refs.current[index] = {};
                     }
                     refs.current[index].title = el;
+                    return undefined;
                   }}
                 >
                   <h3 className="text-x4l text-center font-neueRegular text-textColor-secondary max-w-[220px] leading-[43.2px]">
@@ -117,35 +133,36 @@ export default function Services(props: ServicesProps) {
           <div className="bg-white p-6 h-[450px] overflow-auto rounded-lg shadow-lg w-[400px] md:rounded-none md:w-full md:h-screen">
             <div className="flex justify-end md:pt-5">
               <button className="text-gray-700" onClick={closeModal}>
-                <Image src={Close} alt={t("closeViewDetail")} />
+                <Image
+                  src={Close || "/placeholder.svg"}
+                  alt={t("closeViewDetail")}
+                />
               </button>
             </div>
             <h3 className="text-x2l font-neueRegular text-bg-secondary pt-4 leading-[28px]">
               {t(selectedItem?.title)}
             </h3>
-            {t(selectedItem?.descriptions, { returnObjects: true }).map(
-              (desc: any, index: number) => (
-                <div key={index} className="pt-5">
-                  <p className="text-md font-neueRegular text-textColor-primary pb-2">
-                    {desc.title}
+            {getDescriptions().map((desc, index) => (
+              <div key={index} className="pt-5">
+                <p className="text-md font-neueRegular text-textColor-primary pb-2">
+                  {desc.title}
+                </p>
+                {desc.description && (
+                  <p className="text-sm font-robotoBold text-justify text-textColor-primary">
+                    {desc.description}
                   </p>
-                  {desc.description && (
-                    <p className="text-sm font-robotoBold text-justify text-textColor-primary">
-                      {desc.description}
-                    </p>
-                  )}
-                  {desc.list && (
-                    <ul className="list-disc pl-5 text-textColor-primary text-sm font-robotoBold">
-                      {desc.list.map((item: any, i: number) => (
-                        <li key={i} className="pb-1">
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              )
-            )}
+                )}
+                {desc.list && (
+                  <ul className="list-disc pl-5 text-textColor-primary text-sm font-robotoBold">
+                    {desc.list.map((item, i) => (
+                      <li key={i} className="pb-1">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       )}
