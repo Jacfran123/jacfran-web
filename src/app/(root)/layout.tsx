@@ -2,23 +2,23 @@ import type { Metadata } from "next";
 import "../globals.css";
 
 export const metadata: Metadata = {
-  title: "Jacfran | Professional Vehicle Detailing Services in Bay Area",
+  title: "Professional Car Detailing | Jacfran Service's in Bay Area",
   description:
-    "Jacfran offers premium mobile vehicle detailing services in the Bay Area. Our experienced professionals use advanced techniques and premium products to restore your car's shine and provide long-lasting protection.",
+    "Jacfran offers premium mobile car detailing services in the Bay Area. Our experienced professionals use advanced techniques and premium products to restore your car's shine and provide long-lasting protection.",
   keywords:
-    "vehicle detailing, mobile detailing, Bay Area, car restoration, premium car care, professional auto detailing, mobile car wash, automotive experts",
+    "car detailing, mobile detailing, Bay Area, car restoration, premium car care, professional auto detailing, mobile car wash, automotive experts",
   openGraph: {
-    title: "Premium Mobile Vehicle Detailing Services | Jacfran",
+    title: "Professional Car Detailing | Jacfran Service's in Bay Area",
     description:
       "Transform your vehicle with Jacfran's professional detailing services. Mobile service throughout the Bay Area using premium products and advanced techniques for immaculate results and long-term protection.",
     url: "https://jacfranservices.com/",
-    siteName: "Jacfran Vehicle Detailing Services",
+    siteName: "Jacfran car detailing Services",
     images: [
       {
         url: "https://jacfranservices.com/images/logo_seo.png",
         width: 1200,
         height: 630,
-        alt: "Jacfran Professional Vehicle Detailing Services",
+        alt: "Jacfran Professional car detailing Services",
       },
     ],
     locale: "en_US",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Premium Vehicle Detailing in Bay Area | Jacfran",
+    title: "Premium car detailing in Bay Area | Jacfran",
     description:
       "Professional mobile detailing services using premium products and advanced techniques for immaculate results and long-term protection.",
     images: ["https://jacfranservices.com/images/logo_seo.png"],
