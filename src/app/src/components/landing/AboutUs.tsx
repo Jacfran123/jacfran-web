@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import Automobile from "@/app/src/assets/about.jpg";
+import Automobile from "@/app/src/assets/AboutUs.webp";
 import Map from "@/app/src/assets/map.svg";
 import AboutLogo from "@/app/src/assets/about_logo.svg";
 import Button from "../common/Button";
@@ -30,14 +30,22 @@ export default function AboutUs(props: AboutUsProps) {
           name="description"
           content="JacFran specializes in vehicle detailing, providing top-quality service with a focus on premium products and advanced techniques."
         />
-        <meta property="og:title" content="About JacFran - Vehicle Detailing" />
+        <meta
+          property="og:title"
+          content="Professional Car Detailing | Jacfran Service's in Bay Area"
+        />
         <meta
           property="og:description"
           content="JacFran specializes in vehicle detailing, providing top-quality service with a focus on premium products and advanced techniques."
         />
-        <meta property="og:image" content="/path/to/automobile.jpg" />
+        <meta
+          property="og:image"
+          content="https://jacfranservices.com/images/logo_seo.png"
+        />
         <meta name="robots" content="index, follow" />
-        <title>About JacFran - Vehicle Detailing</title>
+        <title>
+          Professional Car Detailing | Jacfran Service's in Bay Area
+        </title>
       </Head>
 
       <section
@@ -72,7 +80,7 @@ export default function AboutUs(props: AboutUsProps) {
                 <Image
                   alt="Automobile detailing image"
                   src={Automobile}
-                  className="w-[clamp(300px,70vw,535px)] mt-16 rounded-[4px]"
+                  className="w-[clamp(300px,70vw,535px)] mt-16"
                   sizes="100vw"
                   width={0}
                   height={0}
