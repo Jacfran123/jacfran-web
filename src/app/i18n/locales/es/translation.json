@@ -11,9 +11,9 @@
   "contactUs": "Contáctenos",
   "Home": {
     "Ceramic": {
-      "title": "Recubrimiento cerámico",
-      "subtitleGreen": "Tu auto como recien",
-      "subtitleWhite": "salido de la agencia."
+      "title": "Sellado cerámico",
+      "subtitleGreen": "Como recién salido",
+      "subtitleWhite": "de la agencia."
     },
     "Detailing": {
       "title": "Detallado profesional en el area de la bahia",
@@ -47,7 +47,7 @@
   },
   "FrequentlyAsked": {
     "title": "Preguntas frecuentes",
-    "description": "Pregunta",
+    "description": "Preguntas",
     "CarDetailing": {
       "title": "Qué es el Detallado de Automóviles?",
       "description": "El detallado de automóviles es una limpieza, restauración y protección exhaustiva del interior y exterior de un vehículo. Va más allá de un lavado de autos regular al abordar cada detalle de tu coche para mejorar su apariencia y proteger sus superficies. Detallado Completo de Automóviles en la área de la bahia"
@@ -112,21 +112,30 @@
     },
     "threePerson": {
       "name": "LINETT MARCHENA",
-      "description": "¡Increíble el servicio, superó mis expectativas! Mi auto quedo brillante y limpio. 100% Recomendado."
+      "description": "¡Increíble el servicio, superó mis expectativas! Mi auto quedo brillante y limpio. Muy recomendado."
     },
     "fourPerson": {
       "name": "JESUS RODRIGUEZ",
-      "description": "Excelente servicio, mi auto quedo impecable 100% recomendable."
+      "description": "Excelente servicio, mi auto quedo impecable. Muy recomendado."
     }
   },
   "Packages": {
     "title": "Detalle completo",
     "subtitle": "Paquetes",
-    "selectModel": "Seleccione su modelo",
+    "selectModel": "Seleccione el modelo de su auto",
     "details": "Detalle",
     "interior": "Interior",
     "exterior": "Exterior",
+    "showMore": "Ver más",
+    "showLess": "Ver menos",
     "Basic": {
+      "summary": [
+        "Detalle interior completo: limpieza profunda del tablero, consola central y hendiduras.",
+        "Alfombras y tapicería: aspirado exhaustivo y tratamiento de manchas.",
+        "Lavado exterior premium: lavado a mano con cañón de espuma y eliminación de insectos/alquitrán.",
+        "Descontaminación de pintura: tratamiento con barra de arcilla para un acabado suave.",
+        "Protección: cera Carnauba de alta calidad y protección UV para plásticos."
+      ],
       "includes": {
         "Interior": [
           "Desinfección completa",
@@ -161,6 +170,11 @@
       }
     },
     "Gold": {
+      "summary": [
+        "Incluye todo el paquete Basic, MÁS:",
+        "Restauración interior intensiva: limpieza con vapor para sanitización y eliminación profunda de manchas en asientos y alfombras.",
+        "Protección de pintura mejorada: sellador cerámico para repelencia extrema al agua, mayor brillo y hasta 6 meses de defensa ambiental."
+      ],
       "includes": {
         "Interior": [
           "Eliminación de manchas pesadas | Champú interior | Limpieza con vapor",
@@ -195,6 +209,11 @@
       }
     },
     "Diamond": {
+      "summary": [
+        "Incluye todo el paquete Gold, MÁS:",
+        "Mejora de brillo (pulido 1 paso): pulido a máquina para eliminar micro-rayas, restaurar profundidad y un brillo tipo espejo.",
+        "Protección de pintura avanzada: sellador cerámico profesional para repelencia extrema al agua, mayor brillo y 6-12 meses de defensa ambiental duradera."
+      ],
       "prices": {
         "SEDAN": { "before": 1499, "now": 1274 },
         "SUV": { "before": 1749, "now": 1486 },
@@ -227,7 +246,7 @@
           "Abrillantado y brillo de neumáticos",
           "Limpieza de los pozos de las ruedas",
           "Acondicionamiento de todos los plásticos exteriores",
-          "Recubrimiento Cerámico",
+          "Sellador cerámico",
           "Limpieza de ventanas por dentro y por fuera",
           "Agua sin manchas (no deja manchas en el vidrio ni en la pintura)"
         ]
@@ -236,7 +255,7 @@
   },
   "Services": {
     "title": "Servicios adicionales",
-    "description": "Si lo que desea es un servicio único para su vehículo, le ofrecemos una variedad de opciones para su elección.",
+    "description": "Si lo que desea es un servicio único y premium para su vehículo, le ofrecemos una variedad de opciones premium para elegir.",
     "engineWashandConditioning": {
       "title": "Lavado de motor y acondicionamiento",
       "descriptions": [
@@ -380,7 +399,20 @@
           "description": "Este servicio incluye la limpieza y tratamiento de las superficies de plástico del interior y exterior del vehículo. Se aplican productos que hidratan y protegen el plástico, previniendo el agrietamiento y la decoloración. Además, estos productos proporcionan una barrera protectora contra el polvo y la suciedad, manteniendo las superficies de plástico con un aspecto limpio y brillante por más tiempo."
         }
       ]
-    }
+    },
+    "commercialFleetWashing": {
+      "title": "Lavado de flotas comerciales",
+      "description": "Mantenga los vehículos de su negocio en perfecto estado. Una flota limpia representa una marca profesional. Ofrecemos detallado móvil personalizado y planes de mantenimiento regular para empresas de todos los tamaños.",
+      "price": "Contáctenos para precios por volumen.",
+      "descriptions": [
+        {
+          "title": "Lavado de flotas comerciales",
+          "description": "Mantenga los vehículos de su negocio en perfecto estado. Una flota limpia representa una marca profesional. Ofrecemos detallado móvil personalizado y planes de mantenimiento regular para empresas de todos los tamaños.",
+          "price": "Contáctenos para precios por volumen."
+        }
+      ]
+    },
+    "pricingDisclaimer": "Aviso de precios: Todos los precios listados son puntos de partida. El precio final puede variar según el tamaño, estado y nivel de suciedad del vehículo. Vehículos con exceso de pelo de mascotas, moho, riesgos biológicos o lodo pesado tendrán cargos adicionales. Evaluaremos el vehículo y confirmaremos el precio final con usted antes de comenzar cualquier trabajo."
   },
   "Contact": {
     "title": "Formulario de contacto",
@@ -391,7 +423,7 @@
       "placeholder": "Correo electrónico"
     },
     "inputsArea": {
-      "placeholder": "¿Cómo podemos ayudarle? ¡No dude en ponerse en contacto!"
+      "placeholder": "¿Cómo podemos ayudarle? No dude en ponerse en contacto."
     },
     "inputsCheck": {
       "placeholder": "Acepto que mis datos son",

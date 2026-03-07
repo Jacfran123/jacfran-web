@@ -112,13 +112,19 @@ export default function Header(props: HeaderProps) {
         </nav>
 
         <div className="flex lg:hidden">
-          <Image
-            alt="World icon to toggle language"
-            src={WorldLogo || "/placeholder.svg"}
-            className="cursor-pointer mr-10"
-            onClick={handleLanguageChange}
-            loading="lazy"
-          />
+          <div className="mr-10" style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center' }}>
+            <Image
+              alt="World icon to toggle language"
+              src={WorldLogo || "/placeholder.svg"}
+              className="cursor-pointer"
+              onClick={handleLanguageChange}
+              loading="lazy"
+            />
+            <span className="text-xs font-robotoBold text-textColor-secondary mt-1">
+              {currentLanguage === "en" ? "English" : "Español"}
+            </span>
+          </div>
+          
           <Link href="tel:+1(510)330-9396" target="_blank">
             <Button
               className="border border-white font-robotoBold drop-shadow-drop-shadow-3xl 
@@ -176,14 +182,18 @@ export default function Header(props: HeaderProps) {
                 ))}
               </ul>
             </nav>
-            <div>
-              <Image
-                alt="World icon to toggle language mobile"
-                src={WorldLogo}
-                onClick={handleLanguageChange}
-                priority
-              />
-            </div>
+            <div  style={{ display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
+            <Image
+              alt="World icon to toggle language"
+              src={WorldLogo || "/placeholder.svg"}
+              className="cursor-pointer"
+              onClick={handleLanguageChange}
+              loading="lazy"
+            />
+            <span className="text-xs font-robotoBold text-textColor-secondary mt-1">
+              {currentLanguage === "en" ? "English" : "Español"}
+            </span>
+          </div>
           </div>
         </div>
       )}

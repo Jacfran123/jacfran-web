@@ -24,6 +24,7 @@ export default function Packages(props: PackagesProps) {
 
   const [selectedCar, setSelectedCar] = useState<any | null>(CARS[0]);
   const [selectedPackage, setSelectedPackage] = useState<any | null>(null);
+  const [showFullDetails, setShowFullDetails] = useState(false);
 
   useEffect(() => {
     setSelectedPackage(CARS[0].packages[0]);
@@ -32,11 +33,20 @@ export default function Packages(props: PackagesProps) {
   const handleCarSelect = (swiper: any) => {
     setSelectedCar(CARS[swiper.realIndex]);
     setSelectedPackage(CARS[swiper.realIndex].packages[0]);
+    setShowFullDetails(false);
   };
 
   const handlePackageSelect = (pkg: Package) => {
     setSelectedPackage(pkg);
+    setShowFullDetails(false);
   };
+
+  const summaryList = (() => {
+    const raw = t(`Packages.${selectedPackage?.name}.summary`, {
+      returnObjects: true,
+    });
+    return Array.isArray(raw) ? (raw as string[]) : [];
+  })();
 
   return (
     <section className="bg-bg">
@@ -195,84 +205,115 @@ export default function Packages(props: PackagesProps) {
                     </span>
                   </div>
                   <div className="overflow-auto h-[288px] md:h-auto md:overflow-hidden pr-3">
-                    <ul className="pt-5">
-                      <ul className="pl-5">
-                        <li className="font-robotoBold text-md py-2">
-                          {t(selectedPackage?.includesPlans?.interiorTitle)}
-                        </li>
-                        {selectedPackage?.includesPlans?.interior?.flatMap(
-                          (key: any, index: any) => {
-                            const translatedItems = t(key, {
-                              returnObjects: true,
-                            });
-
-                            if (
-                              typeof translatedItems === "object" &&
-                              translatedItems !== null
-                            ) {
-                              return Object.values(translatedItems).map(
-                                (translatedText, subIndex) => (
-                                  <li
-                                    key={`${index}-${subIndex}`}
-                                    className="flex items-center"
-                                  >
-                                    <Image
-                                      alt="Icon Check"
-                                      src={IconCheck}
-                                      height={24}
-                                      width={24}
-                                      loading="lazy"
-                                    />
-                                    <span className="text-sm leading-[18.75px] font-robotoBold text-justify lg:w-[65%]">
-                                      {translatedText}
-                                    </span>
-                                  </li>
-                                )
-                              );
-                            }
-                          }
-                        )}
+                    {!showFullDetails ? (
+                      <ul className="pt-5 pl-5 space-y-2">
+                        {summaryList.map((item: string, index: number) => (
+                          <li
+                            key={index}
+                            className="flex items-center"
+                          >
+                            <Image
+                              alt="Icon Check"
+                              src={IconCheck}
+                              height={24}
+                              width={24}
+                              loading="lazy"
+                            />
+                            <span className="text-sm leading-[18.75px] font-robotoBold text-justify lg:w-[65%]">
+                              {item}
+                            </span>
+                          </li>
+                        ))}
                       </ul>
-                    </ul>
-                    <ul className="space-y-3">
-                      <ul className=" pl-5">
-                        <li className="font-robotoBold text-md my-3">
-                          {t(selectedPackage?.includesPlans?.exteriorTitle)}
-                        </li>
-                        {selectedPackage?.includesPlans?.exterior?.flatMap(
-                          (key: any, index: any) => {
-                            const translatedItems = t(key, {
-                              returnObjects: true,
-                            });
+                    ) : (
+                      <>
+                        <ul className="pt-5">
+                          <ul className="pl-5">
+                            <li className="font-robotoBold text-md py-2">
+                              {t(selectedPackage?.includesPlans?.interiorTitle)}
+                            </li>
+                            {selectedPackage?.includesPlans?.interior?.flatMap(
+                              (key: any, index: any) => {
+                                const translatedItems = t(key, {
+                                  returnObjects: true,
+                                });
 
-                            if (
-                              typeof translatedItems === "object" &&
-                              translatedItems !== null
-                            ) {
-                              return Object.values(translatedItems).map(
-                                (translatedText, subIndex) => (
-                                  <li
-                                    key={`${index}-${subIndex}`}
-                                    className="flex items-center"
-                                  >
-                                    <Image
-                                      alt="Icon Check"
-                                      src={IconCheck}
-                                      height={24}
-                                      width={24}
-                                      loading="lazy"
-                                    />
-                                    <span className="text-sm leading-[18.75px] font-robotoBold text-justify lg:w-[65%]">
-                                      {translatedText}
-                                    </span>
-                                  </li>
-                                )
-                              );
-                            }
-                          }
-                        )}
-                      </ul>
-                    </ul>
+                                if (
+                                  typeof translatedItems === "object" &&
+                                  translatedItems !== null
+                                ) {
+                                  return Object.values(translatedItems).map(
+                                    (translatedText, subIndex) => (
+                                      <li
+                                        key={`${index}-${subIndex}`}
+                                        className="flex items-center"
+                                      >
+                                        <Image
+                                          alt="Icon Check"
+                                          src={IconCheck}
+                                          height={24}
+                                          width={24}
+                                          loading="lazy"
+                                        />
+                                        <span className="text-sm leading-[18.75px] font-robotoBold text-justify lg:w-[65%]">
+                                          {translatedText}
+                                        </span>
+                                      </li>
+                                    )
+                                  );
+                                }
+                              }
+                            )}
+                          </ul>
+                        </ul>
+                        <ul className="space-y-3">
+                          <ul className=" pl-5">
+                            <li className="font-robotoBold text-md my-3">
+                              {t(selectedPackage?.includesPlans?.exteriorTitle)}
+                            </li>
+                            {selectedPackage?.includesPlans?.exterior?.flatMap(
+                              (key: any, index: any) => {
+                                const translatedItems = t(key, {
+                                  returnObjects: true,
+                                });
+
+                                if (
+                                  typeof translatedItems === "object" &&
+                                  translatedItems !== null
+                                ) {
+                                  return Object.values(translatedItems).map(
+                                    (translatedText, subIndex) => (
+                                      <li
+                                        key={`${index}-${subIndex}`}
+                                        className="flex items-center"
+                                      >
+                                        <Image
+                                          alt="Icon Check"
+                                          src={IconCheck}
+                                          height={24}
+                                          width={24}
+                                          loading="lazy"
+                                        />
+                                        <span className="text-sm leading-[18.75px] font-robotoBold text-justify lg:w-[65%]">
+                                          {translatedText}
+                                        </span>
+                                      </li>
+                                    )
+                                  );
+                                }
+                              }
+                            )}
+                          </ul>
+                        </ul>
+                      </>
+                    )}
+                    <button
+                      type="button"
+                      onClick={() => setShowFullDetails(!showFullDetails)}
+                      className="mt-3 text-primary font-robotoBold text-sm underline hover:no-underline"
+                    >
+                      {showFullDetails ? t("Packages.showLess") : t("Packages.showMore")}
+                    </button>
                   </div>
                 </div>
               </div>

@@ -126,6 +126,9 @@ export default function Services(props: ServicesProps) {
             </div>
           ))}
         </div>
+        <p className="text-sm font-robotoBold text-center text-textColor-secondary mt-12 max-w-3xl mx-auto px-5">
+          {t("Services.pricingDisclaimer")}
+        </p>
       </div>
 
       {isModalOpen && (
@@ -150,6 +153,11 @@ export default function Services(props: ServicesProps) {
                 {desc.description && (
                   <p className="text-sm font-robotoBold text-justify text-textColor-primary">
                     {desc.description}
+                  </p>
+                )}
+                {desc.price && (
+                  <p className="text-sm font-robotoBold text-primary mt-2">
+                    {desc.price}
                   </p>
                 )}
                 {desc.list && (

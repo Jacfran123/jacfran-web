@@ -31,6 +31,7 @@ import Pintura from "@/app/src/assets/services/pintura.webp";
 import Plastico from "@/app/src/assets/services/plasticos.webp";
 import Recubrimiento from "@/app/src/assets/services/recubrimiento.webp";
 import Ventanas from "@/app/src/assets/services/ventanas.webp";
+import Flota from "@/app/src/assets/services/flota.png";
 //Testimonials
 import TestiMonialOne from "@/app/src/assets/testimonio-1.png";
 import TestiMonialTwo from "@/app/src/assets/testimonio-2.png";
@@ -177,9 +178,9 @@ export const CARS = [
     packages: [
       {
         name: "Basic",
-        duration: "2hr aprox",
+        duration: "2 - 3 hrs approx.",
         bg: "bg-[#DFDFDF]",
-        amount: 255,
+        amount: 200,
         includesPlans: {
           interiorTitle: "Packages.interior",
           exteriorTitle: "Packages.exterior",
@@ -189,9 +190,9 @@ export const CARS = [
       },
       {
         name: "Gold",
-        duration: "3hr aprox",
+        duration: "3 - 4 hrs approx.",
         bg: "bg-[#BBBBBB]",
-        amount: 382,
+        amount: 250,
         includesPlans: {
           interiorTitle: "Packages.interior",
           exteriorTitle: "Packages.exterior",
@@ -201,9 +202,9 @@ export const CARS = [
       },
       {
         name: "Diamond",
-        duration: "6hr aprox",
+        duration: "Half-Day / Varies",
         bg: "bg-[#959595]",
-        amount: 1274,
+        amount: 400,
         includesPlans: {
           interiorTitle: "Packages.interior",
           exteriorTitle: "Packages.exterior",
@@ -219,10 +220,10 @@ export const CARS = [
     packages: [
       {
         name: "Basic",
-        duration: "2hr aprox",
+        duration: "2 - 3 hrs approx.",
         bg: "bg-[#DFDFDF]",
         details: [],
-        amount: 311,
+        amount: 250,
         includesPlans: {
           interiorTitle: "Packages.interior",
           exteriorTitle: "Packages.exterior",
@@ -232,10 +233,10 @@ export const CARS = [
       },
       {
         name: "Gold",
-        duration: "3hr aprox",
+        duration: "3 - 4 hrs approx.",
         bg: "bg-[#BBBBBB]",
         details: [],
-        amount: 399,
+        amount: 300,
         includesPlans: {
           interiorTitle: "Packages.interior",
           exteriorTitle: "Packages.exterior",
@@ -245,10 +246,10 @@ export const CARS = [
       },
       {
         name: "Diamond",
-        duration: "6hr aprox",
+        duration: "Half-Day / Varies",
         bg: "bg-[#959595]",
         details: [],
-        amount: 1486,
+        amount: 450,
         includesPlans: {
           interiorTitle: "Packages.interior",
           exteriorTitle: "Packages.exterior",
@@ -264,10 +265,10 @@ export const CARS = [
     packages: [
       {
         name: "Basic",
-        duration: "2hr aprox",
+        duration: "2 - 3 hrs approx.",
         bg: "bg-[#DFDFDF]",
         details: [],
-        amount: 365,
+        amount: 300,
         includesPlans: {
           interiorTitle: "Packages.interior",
           exteriorTitle: "Packages.exterior",
@@ -277,10 +278,10 @@ export const CARS = [
       },
       {
         name: "Gold",
-        duration: "3hr aprox",
+        duration: "3 - 4 hrs approx.",
         bg: "bg-[#BBBBBB]",
         details: [],
-        amount: 425,
+        amount: 350,
         includesPlans: {
           interiorTitle: "Packages.interior",
           exteriorTitle: "Packages.exterior",
@@ -290,10 +291,10 @@ export const CARS = [
       },
       {
         name: "Diamond",
-        duration: "6hr aprox",
+        duration: "Half-Day / Varies",
         bg: "bg-[#959595]",
         details: [],
-        amount: 1656,
+        amount: 500,
         includesPlans: {
           interiorTitle: "Packages.interior",
           exteriorTitle: "Packages.exterior",
@@ -384,5 +385,10 @@ export const FEATURES_SECTION = [
     title: "Services.plasticConditioning.title",
     logo: Plastico,
     descriptions: ["Services.plasticConditioning.descriptions"],
+  },
+  {
+    title: "Services.commercialFleetWashing.title",
+    logo: Flota,
+    descriptions: ["Services.commercialFleetWashing.descriptions"],
   },
 ];

@@ -11,9 +11,9 @@
   "contactUs": "contact Us",
   "Home": {
     "Ceramic": {
-      "title": "Ceramic Coating",
-      "subtitleGreen": "Your car as just",
-      "subtitleWhite": "said from the dealership."
+      "title": "Ceramic Sealing",
+      "subtitleGreen": "Like it just came",
+      "subtitleWhite": "from the dealership."
     },
     "Detailing": {
       "title": "Professional detailing in the Bay Area",
@@ -47,7 +47,7 @@
   },
   "FrequentlyAsked": {
     "title": "Frequently Asked",
-    "description": "Question",
+    "description": "Questions",
     "CarDetailing": {
       "title": "What is Car Detailing? ",
       "description": "Car detailing is a high-quality service that involves the meticulous cleaning, restoration, and protection of your vehicle's interior and exterior. In contrast to the typical car wash experience, detailing takes a meticulous approach, ensuring that every aspect of your vehicle is attended to. This process enhances its appearance while protecting the surfaces from potential damage. A full car detail is the most effective way to ensure your vehicle looks and feels like new. such as removing dirt from hard-to-reach areas, restoring the paint's shine, and also applying protective coatings. Receive our premium car detailing service in the Bay Area today!"
@@ -122,11 +122,20 @@
   "Packages": {
     "title": "full detail",
     "subtitle": "Packages",
-    "selectModel": "Select your model car",
+    "selectModel": "Select your car model",
     "details": "Details",
     "interior": "Interior",
     "exterior": "Exterior",
+    "showMore": "Show more",
+    "showLess": "Show less",
     "Basic": {
+      "summary": [
+        "Complete Interior Detail: Deep cleaning of dashboard, center console, and crevices.",
+        "Carpet & Upholstery: Thorough vacuuming and spot treatment.",
+        "Premium Exterior Wash: Foam cannon hand wash & bug/tar removal.",
+        "Paint Decontamination: Clay bar treatment for a smooth finish.",
+        "Protection: High-quality Carnauba Wax & UV plastic protection."
+      ],
       "includes": {
         "Interior": [
           "Full Wipe Down Disinfection",
@@ -160,6 +169,11 @@
       }
     },
     "Gold": {
+      "summary": [
+        "Includes everything in the Basic Package, PLUS:",
+        "Intensive Interior Restoration: Steam cleaning treatment for sanitization and deep heavy stain removal on seats and carpets.",
+        "Upgraded Paint Protection: Ceramic Sealant applied for extreme water beading, enhanced gloss, and up to 6 months of environmental defense."
+      ],
       "includes": {
         "Interior": [
           "Heavy Stain Removal | Interior Shampoo | Steam Cleaning",
@@ -194,6 +208,11 @@
       }
     },
     "Diamond": {
+      "summary": [
+        "Includes everything in the Gold Package, PLUS:",
+        "Gloss Enhancement (1-Step Polish): Machine polishing to remove light swirls, restore depth, and bring out a mirror-like shine in your paint.",
+        "Advanced Paint Protection: Professional Ceramic Sealant applied for extreme water beading, enhanced gloss, and up to 6-12 months of durable environmental defense."
+      ],
       "prices": {
         "SEDAN": { "before": 1499, "now": 1274 },
         "SUV": { "before": 1749, "now": 1486 },
@@ -226,7 +245,7 @@
           "Dress and Shine Tires",
           "Clean Wheel Wells",
           "Dress All Exterior Plastic",
-          "Ceramic Coating",
+          "Ceramic Sealant",
           "Windows Clean In & Out",
           "Spot Free Water (do not spot glass or paint)"
         ]
@@ -235,7 +254,7 @@
   },
   "Services": {
     "title": "ADDITIONAL SERVICES",
-    "description": "If you are seeking a unique and premium service for your vehicle, we offer a variety of options for your choice.",
+    "description": "If you are seeking a unique and premium service for your vehicle, we offer a variety of premium options to choose from.",
     "engineWashandConditioning": {
       "title": "Engine Wash and Conditioning",
       "descriptions": [
@@ -383,7 +402,20 @@
           "description": "This service includes the cleaning and treatment of plastic surfaces inside and outside the vehicle. Products are applied that hydrate and protect the plastic, preventing cracking and discoloration. Additionally, these products provide a protective barrier against dust and dirt, keeping plastic surfaces looking clean and shiny for longer."
         }
       ]
-    }
+    },
+    "commercialFleetWashing": {
+      "title": "Commercial Fleet Washing",
+      "description": "Keep your business vehicles looking their best. A clean fleet represents a professional brand. We offer customized mobile detailing and regular maintenance plans for businesses of all sizes.",
+      "price": "Contact us for custom volume pricing.",
+      "descriptions": [
+        {
+          "title": "Commercial Fleet Washing",
+          "description": "Keep your business vehicles looking their best. A clean fleet represents a professional brand. We offer customized mobile detailing and regular maintenance plans for businesses of all sizes.",
+          "price": "Contact us for custom volume pricing."
+        }
+      ]
+    },
+    "pricingDisclaimer": "Pricing Disclaimer: All listed prices are starting points. Final pricing may vary based on the size, condition, and level of soiling of the vehicle. Vehicles with excessive pet hair, mold, biohazards, or heavy mud will incur additional fees. We will evaluate the vehicle and confirm the final price with you before starting any work."
   },
   "Contact": {
     "title": "Contact form",
@@ -394,7 +426,7 @@
       "placeholder": "Email Address"
     },
     "inputsArea": {
-      "placeholder": "How can we help you? feel free to get in touch!"
+      "placeholder": "How can we help you? Feel free to get in touch."
     },
     "inputsCheck": {
       "placeholder": "I agree that my data is",
