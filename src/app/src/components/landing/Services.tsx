@@ -17,6 +17,7 @@ interface Description {
   title: string;
   description?: string;
   list?: string[];
+  price?: string;
 }
 
 export default function Services(props: ServicesProps) {
