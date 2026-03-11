@@ -216,7 +216,7 @@ export const CARS = [
   },
   {
     image: Suv,
-    type: "Suv",
+    type: "SUV",
     packages: [
       {
         name: "Basic",
@@ -261,7 +261,7 @@ export const CARS = [
   },
   {
     image: Truck,
-    type: "Trucks",
+    type: "Truck",
     packages: [
       {
         name: "Basic",
