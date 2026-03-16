@@ -1,3 +1,10 @@
 export type Params = {
   lng: "en" | "es";
 };
+
+declare global {
+  interface Window {
+    dataLayer?: unknown[];
+    gtag?: (...args: unknown[]) => void;
+  }
+}

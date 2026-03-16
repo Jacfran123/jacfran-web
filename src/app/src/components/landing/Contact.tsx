@@ -37,6 +37,13 @@ export default function Contact(props: ContactProps) {
       agreement: Yup.boolean().oneOf([true], t("Contact.errors.agreement")),
     }),
     onSubmit: (values, { resetForm }) => {
+      // Google Ads conversion event (Compra)
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "conversion", {
+          send_to: "AW-17990728939/XJYXCJvVsIQcEOv50oJD",
+          transaction_id: `contact_${Date.now()}_${Math.random().toString(36).slice(2, 9)}`,
+        });
+      }
       window.location.href = `mailto:jacfranservices@gmail.com?subject=${values.name} - JacFran Services&body=${values.message}`;
       resetForm();
     },
